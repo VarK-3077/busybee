@@ -1,0 +1,347 @@
+{
+ "rule_results": [
+  {
+   "rule_id": "net_debt_to_ebitda_max",
+   "name": "Net debt / EBITDA at most 4.5x",
+   "status": "pass",
+   "outcome": "refer",
+   "message": "Net debt / EBITDA exceeds the 4.5x minimum standard (or EBITDA is not positive); caution zone is above 3.5x.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "ebitda",
+     "fact_id": "F164",
+     "value": "15716.21",
+     "unit": "INR lakh",
+     "value_scaled": 15716
+    },
+    {
+     "slot": "net_debt",
+     "fact_id": "F174",
+     "value": "525.86",
+     "unit": "INR crore x 100",
+     "value_scaled": 52586
+    }
+   ]
+  },
+  {
+   "rule_id": "interest_coverage_min",
+   "name": "Interest coverage at least 2.5x",
+   "status": "fail",
+   "outcome": "refer",
+   "message": "Interest coverage (EBITDA / interest) is below the 2.5x minimum standard (or EBITDA is not positive); caution zone is below 4.0x.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "ebitda",
+     "fact_id": "F164",
+     "value": "15716.21",
+     "unit": "INR lakh",
+     "value_scaled": 15716
+    },
+    {
+     "slot": "interest_expense",
+     "fact_id": "F030",
+     "value": "88.5",
+     "unit": "INR crore",
+     "value_scaled": 8850
+    }
+   ]
+  },
+  {
+   "rule_id": "dscr_min",
+   "name": "DSCR at least 1.25x",
+   "status": "fail",
+   "outcome": "refer",
+   "message": "DSCR (CFADS / debt service) is below the 1.25x minimum standard; caution zone is below 1.50x.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "debt_service",
+     "fact_id": "F100",
+     "value": "157.32",
+     "unit": "INR crore x 100",
+     "value_scaled": 15732
+    },
+    {
+     "slot": "cfads",
+     "fact_id": "F164",
+     "value": "157.16",
+     "unit": "INR crore x 100",
+     "value_scaled": 15716
+    }
+   ]
+  },
+  {
+   "rule_id": "current_ratio_min",
+   "name": "Current ratio at least 1.10x",
+   "status": "caution",
+   "outcome": "refer",
+   "message": "Current ratio is below the 1.10x minimum standard; caution zone is below 1.33x.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "current_assets",
+     "fact_id": "F197",
+     "value": "111372",
+     "unit": "INR lakh",
+     "value_scaled": 111372
+    },
+    {
+     "slot": "current_liabilities",
+     "fact_id": "F199",
+     "value": "87547",
+     "unit": "INR lakh",
+     "value_scaled": 87547
+    }
+   ]
+  },
+  {
+   "rule_id": "debt_to_equity_max",
+   "name": "Total debt / equity at most 3.0x",
+   "status": "pass",
+   "outcome": "refer",
+   "message": "Total debt / equity exceeds the 3.0x minimum standard (or equity is not positive); caution zone is above 2.0x.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "total_equity",
+     "fact_id": "F054",
+     "value": "1099.2",
+     "unit": "INR crore",
+     "value_scaled": 109920
+    },
+    {
+     "slot": "total_debt",
+     "fact_id": "F174",
+     "value": "70560.64",
+     "unit": "INR lakh",
+     "value_scaled": 70561
+    }
+   ]
+  },
+  {
+   "rule_id": "revenue_trend_min",
+   "name": "Revenue trend not below -10%",
+   "status": "pass",
+   "outcome": "refer",
+   "message": "Year-on-year revenue fell by more than 10%, below the minimum standard; caution zone is any decline.",
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "inputs": [
+    {
+     "slot": "revenue_previous",
+     "fact_id": "F019",
+     "value": "151819",
+     "unit": "INR lakh",
+     "value_scaled": 151819
+    },
+    {
+     "slot": "revenue_current",
+     "fact_id": "F019",
+     "value": "168607",
+     "unit": "INR lakh",
+     "value_scaled": 168607
+    }
+   ]
+  },
+  {
+   "rule_id": "tangible_net_worth_positive",
+   "name": "Tangible net worth positive",
+   "status": "pass",
+   "outcome": "decline",
+   "message": "Tangible net worth is not positive, so the borrower is ineligible under the eligibility rules.",
+   "policy_section": "2",
+   "policy_section_id": "P3",
+   "inputs": [
+    {
+     "slot": "tangible_net_worth",
+     "fact_id": "F054",
+     "value": "1019.12",
+     "unit": "INR crore x 100",
+     "value_scaled": 101912
+    }
+   ]
+  },
+  {
+   "rule_id": "external_rating_min",
+   "name": "External rating at least BBB-",
+   "status": "pass",
+   "outcome": "decline",
+   "message": "The external rating is below BBB- (index above 10), which is not acceptable (the secured SME exception below INR 25 crore needs a manual decision).",
+   "policy_section": "5",
+   "policy_section_id": "P6",
+   "inputs": [
+    {
+     "slot": "external_rating_index",
+     "fact_id": "F390",
+     "value": "6",
+     "unit": "index",
+     "value_scaled": 6
+    }
+   ]
+  },
+  {
+   "rule_id": "default_flag_clear",
+   "name": "No default flag",
+   "status": "pass",
+   "outcome": "decline",
+   "message": "A default flag is raised (NPA, wilful default or one-time settlement in the last 36 months), which forces the Internal Risk Grade to 8 and a decline.",
+   "policy_section": "6",
+   "policy_section_id": "P7",
+   "inputs": [
+    {
+     "slot": "default_flag",
+     "fact_id": "F155",
+     "value": "0",
+     "unit": "flag",
+     "value_scaled": 0
+    }
+   ]
+  },
+  {
+   "rule_id": "major_red_flags_below_two",
+   "name": "Fewer than two major red flags",
+   "status": "pass",
+   "outcome": "refer",
+   "message": "Two or more major red flags are present, which is a mandatory referral to the credit committee.",
+   "policy_section": "6",
+   "policy_section_id": "P7",
+   "inputs": [
+    {
+     "slot": "major_red_flag_count",
+     "fact_id": "F035",
+     "value": "0",
+     "unit": "count",
+     "value_scaled": 0
+    }
+   ]
+  },
+  {
+   "rule_id": "no_major_red_flag",
+   "name": "No major red flag",
+   "status": "pass",
+   "outcome": "caution",
+   "message": "One major red flag is present, which allows approval only with conditions.",
+   "policy_section": "11",
+   "policy_section_id": "P15",
+   "inputs": [
+    {
+     "slot": "major_red_flag_count",
+     "fact_id": "F035",
+     "value": "0",
+     "unit": "count",
+     "value_scaled": 0
+    }
+   ]
+  },
+  {
+   "rule_id": "exposure_within_cap",
+   "name": "Proposed exposure within the maximum exposure",
+   "status": "pass",
+   "outcome": "pass_required",
+   "message": "The proposed exposure is above the maximum permissible exposure; it must be reduced to the maximum exposure.",
+   "policy_section": "10.3",
+   "policy_section_id": "P14",
+   "inputs": [
+    {
+     "slot": "proposed_exposure",
+     "fact_id": "F405",
+     "value": "150",
+     "unit": "INR crore",
+     "value_scaled": 15000
+    },
+    {
+     "slot": "maximum_exposure",
+     "fact_id": "",
+     "value": "168.6",
+     "unit": "crore",
+     "value_scaled": 16860
+    }
+   ]
+  },
+  {
+   "rule_id": "irg_not_decline",
+   "name": "Internal Risk Grade 1 to 7",
+   "status": "pass",
+   "outcome": "decline",
+   "message": "Internal Risk Grade is 8, which the decision rules decline.",
+   "policy_section": "11",
+   "policy_section_id": "P15",
+   "inputs": [
+    {
+     "slot": "internal_risk_grade",
+     "fact_id": "",
+     "value": "5",
+     "unit": "grade",
+     "value_scaled": 5
+    }
+   ]
+  },
+  {
+   "rule_id": "irg_not_committee_only",
+   "name": "Internal Risk Grade 1 to 5",
+   "status": "pass",
+   "outcome": "refer",
+   "message": "Internal Risk Grade is 6 or 7 (high risk), which the decision rules refer to the credit committee.",
+   "policy_section": "11",
+   "policy_section_id": "P15",
+   "inputs": [
+    {
+     "slot": "internal_risk_grade",
+     "fact_id": "",
+     "value": "5",
+     "unit": "grade",
+     "value_scaled": 5
+    }
+   ]
+  },
+  {
+   "rule_id": "irg_low_risk",
+   "name": "Internal Risk Grade 1 to 3",
+   "status": "caution",
+   "outcome": "caution",
+   "message": "Internal Risk Grade is 4 or 5 (acceptable risk), which allows approval only with conditions.",
+   "policy_section": "11",
+   "policy_section_id": "P15",
+   "inputs": [
+    {
+     "slot": "internal_risk_grade",
+     "fact_id": "",
+     "value": "5",
+     "unit": "grade",
+     "value_scaled": 5
+    }
+   ]
+  }
+ ],
+ "inferences": [
+  {
+   "inference_id": "I001",
+   "opinion": "The consolidated interest coverage ratio of 0.1x indicates that the group's operating earnings are insufficient to cover its interest obligations, posing a significant risk to debt repayment capacity.",
+   "fact_ids": [
+    "F065",
+    "F031",
+    "F029"
+   ],
+   "reasoning": "The consolidated interest coverage ratio has deteriorated to 0.1x, meaning operating profits cover only a fraction of the interest expense. With consolidated finance costs rising to INR 122.25 crore and consolidated EBITDA at INR 145.16 crore, the interest burden is disproportionately high relative to earnings. This weak coverage ratio suggests the company relies on external funding or asset sales to service debt rather than internal cash generation. [Independent check: The reasoning claims the company relies on external funding or asset sales to service debt, which is an assumption about management strategy or cash flow sources not supported by the listed facts.; The reasoning states that operating profits cover only a fraction of the interest expense, but the listed facts show EBITDA (145.16) is greater than Finance Cost (122.25), meaning coverage is positive (approx 1.19x based on these specific figures, though the stated ratio is 0.1x, the qualitative claim that it covers 'only a fraction' is contradicted by the raw numbers provided in the facts if interpreted as EBITDA/Interest, or at least the specific causal link to 'external funding' is unsupported).; The reasoning asserts a causal link between the weak coverage ratio and reliance on external funding/asset sales, which is not established by the provided financial metrics.]",
+   "confidence": 0.2
+  },
+  {
+   "inference_id": "I004",
+   "opinion": "The standalone interest coverage ratio of 0.9x is below the critical threshold of 1.0x, indicating that even at the parent level, operating earnings do not fully cover interest expenses.",
+   "fact_ids": [
+    "F059",
+    "F030",
+    "F028"
+   ],
+   "reasoning": "The standalone interest coverage ratio stands at 0.9x, which is below the minimum threshold of 1.0x required for comfortable debt servicing. Standalone finance costs of INR 88.5 crore exceed the standalone EBITDA of INR 186.79 crore when considering the full interest burden, leading to a pre-tax loss. This indicates that the parent company is also struggling to cover its interest obligations from operating cash flows. [Independent check: The reasoning claims finance costs (INR 88.5 crore) exceed EBITDA (INR 186.79 crore), which is mathematically incorrect (88.5 < 186.79).; The reasoning asserts a 'pre-tax loss' is resulting from the interest burden, but the facts only provide EBITDA and Finance Costs; they do not provide Depreciation, Amortization, Impairment, or other operating expenses required to determine pre-tax profit or loss.; The reasoning introduces an external assumption about a 'minimum threshold of 1.0x required for comfortable debt servicing' which is not present in the listed facts.; The reasoning makes a causal claim that the company is 'struggling to cover its interest obligations from operating cash flows' based on the ratio, but the facts do not provide operating cash flow data, only accrual-based EBITDA and finance costs.]",
+   "confidence": 0.2
+  }
+ ]
+}

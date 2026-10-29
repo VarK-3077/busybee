@@ -1,0 +1,13 @@
+{
+  "overridden": false,
+  "model_decision": "decline",
+  "final_decision": "decline",
+  "floor": "decline",
+  "rule_ids": [
+    "irg_not_decline"
+  ],
+  "model_headline": "Decline the facility",
+  "headline": "Decline the facility",
+  "headline_rebuilt": false,
+  "headline_rule_id": null
+}

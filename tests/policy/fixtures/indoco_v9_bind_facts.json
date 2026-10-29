@@ -1,0 +1,820 @@
+{
+ "v9a": [
+  {
+   "fact_id": "F003",
+   "statement": "Consolidated profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax was INR 145.16 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 104.71 crore).",
+   "category": "profitability",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "145.16",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "104.71",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+    "value": "145.16",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "104.71",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Consolidated Year ended March 31, 2026: 145.16 | Year ended March 31, 2025: 104.71",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F139",
+   "statement": "Consolidated total adjusted EBITDA was INR 14,181.82 lakh as at March 31, 2026 (March 31, 2025: INR 9,925.26 lakh).",
+   "category": "profitability",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Total adjusted EBITDA",
+     "value": "14181.82",
+     "unit": "INR lakh",
+     "period": "March 31, 2026"
+    },
+    {
+     "label": "Total adjusted EBITDA",
+     "value": "9925.26",
+     "unit": "INR lakh",
+     "period": "March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Total adjusted EBITDA",
+    "value": "14181.82",
+    "unit": "lakh",
+    "period": "March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "9925.26",
+    "previous_period": "March 31, 2025",
+    "section": "Particulars"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p327:c0",
+     "doc_id": "D1",
+     "page_no": 327,
+     "quote": "Total adjusted EBITDA | March 31, 2026: 14,181.82",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F268",
+   "statement": "Consolidated interest Expense for the year ended March 31, 2026 was INR 8,026.59 lakh.",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "8026.59",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p319:c0",
+     "doc_id": "D1",
+     "page_no": 319,
+     "quote": "Interest Expense | Apr'25-Mar'26: 8,026.59",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F269",
+   "statement": "Consolidated finance Cost (Other than Unrealised Foreign Exchange (Gain) / Loss) was an outflow of INR 12,270.29 lakh for the year ended March 31, 2026.",
+   "category": "cash_flow",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "outflow",
+     "value": "12270.29",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p274:c0",
+     "doc_id": "D1",
+     "page_no": 274,
+     "quote": "Finance Cost (Other than Unrealised Foreign | Year ended 31.03.2026: (12,270.29)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F156",
+   "statement": "Consolidated total Borrowings was INR 1,03,584.47 lakh as at As at 31.03.2026 (As at 31.03.2025: INR 97,802.94 lakh).",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Total Borrowings",
+     "value": "103584.47",
+     "unit": "INR lakh",
+     "period": "As at 31.03.2026"
+    },
+    {
+     "label": "Total Borrowings",
+     "value": "97802.94",
+     "unit": "INR lakh",
+     "period": "As at 31.03.2025"
+    }
+   ],
+   "record": {
+    "metric": "Total Borrowings",
+    "value": "103584.47",
+    "unit": "lakhs",
+    "period": "As at 31.03.2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "97802.94",
+    "previous_period": "As at 31.03.2025",
+    "section": "Particular"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p333:c0",
+     "doc_id": "D1",
+     "page_no": 333,
+     "quote": "Total Borrowings | As at 31.03.2026: 1,03,584.47",
+     "source": null
+    }
+   ],
+   "importance": 5
+  },
+  {
+   "fact_id": "F267",
+   "statement": "Consolidated non-current lease liabilities were INR 4,233.88 lakh as at March 31, 2026.",
+   "category": "liquidity",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "consolidated non-current lease liabilities",
+     "value": "4233.88",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p187:c2",
+     "doc_id": "D1",
+     "page_no": 187,
+     "quote": "(ia) Lease Liabilities ................................................................ | Note No.: 22b | March 31, 2026: 4,233.88 | (` in lakhs)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F271",
+   "statement": "Consolidated current lease liabilities for the year ended March 31, 2026 were INR 1,155.73 lakh.",
+   "category": "liquidity",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "1155.73",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p187:c2",
+     "doc_id": "D1",
+     "page_no": 187,
+     "quote": "(ia) Lease Liabilities ................................................................ | Note No.: 26b | March 31, 2026: 1,155.73 | (` in lakhs)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F270",
+   "statement": "Consolidated total equity (net worth) as at March 31, 2026 was INR 91,365.11 lakh.",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "91365.11",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p275:c1",
+     "doc_id": "D1",
+     "page_no": 275,
+     "quote": "Balance as at March 31, 2026\n641.88\n6,784.34\n0.02\n25,817.64\n57,650.81\n551.56\n635.43\n92,081.68\n(716.57)\n91,365.11",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F274",
+   "statement": "Consolidated total, Cash and Cash Equivalents for Indoco Remedies Limited for the year ended March 31, 2026 was INR 2,592.78 lakh.",
+   "category": "cash_flow",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "2592.78",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p298:c0",
+     "doc_id": "D1",
+     "page_no": 298,
+     "quote": "Total, Cash and Cash Equivalents | March 31, 2026: 2,592.78",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F276",
+   "statement": "Consolidated bank balances other than cash and cash equivalents for Indoco Remedies Limited as at March 31, 2026 were INR 706.12 lakh.",
+   "category": "cash_flow",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "706.12",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p298:c0",
+     "doc_id": "D1",
+     "page_no": 298,
+     "quote": "Total, Bank Balances Other than Cash & Cash Equivalents | March 31, 2026: 706.12",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F002",
+   "statement": "Standalone profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax was INR 186.79 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 146.52 crore).",
+   "category": "profitability",
+   "scope": "standalone",
+   "numbers": [
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "186.79",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "146.52",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+    "value": "186.79",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "standalone",
+    "qualifier": null,
+    "previous_value": "146.52",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Profit Before Finance Cost, Depreciation, Amortization,\nStandalone Year ended March 31, 2026: 186.79 | Year ended March 31, 2025: 146.52",
+     "source": null
+    }
+   ],
+   "importance": 3
+  }
+ ],
+ "v9b": [
+  {
+   "fact_id": "F005",
+   "statement": "Standalone profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax was INR 186.79 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 146.52 crore).",
+   "category": "profitability",
+   "scope": "standalone",
+   "numbers": [
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "186.79",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "146.52",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+    "value": "186.79",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "standalone",
+    "qualifier": null,
+    "previous_value": "146.52",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Profit Before Finance Cost, Depreciation, Amortization,\nStandalone Year ended March 31, 2026: 186.79 | Year ended March 31, 2025: 146.52",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F006",
+   "statement": "Consolidated profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax was INR 145.16 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 104.71 crore).",
+   "category": "profitability",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "145.16",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+     "value": "104.71",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Profit Before Finance Cost, Depreciation, Amortization, Impairment and Tax",
+    "value": "145.16",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "104.71",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Consolidated Year ended March 31, 2026: 145.16 | Year ended March 31, 2025: 104.71",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F007",
+   "statement": "Standalone finance Cost was INR 88.50 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 56.63 crore).",
+   "category": "debt_leverage",
+   "scope": "standalone",
+   "numbers": [
+    {
+     "label": "Finance Cost",
+     "value": "88.50",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Finance Cost",
+     "value": "56.63",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Finance Cost",
+    "value": "88.50",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "standalone",
+    "qualifier": null,
+    "previous_value": "56.63",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Less: Finance Cost | Standalone Year ended March 31, 2026: 88.50 | Year ended March 31, 2025: 56.63 | Consolidated Year ended March 31, 2026: 122.25 | Year ended March 31, 2025: 66.23",
+     "source": null
+    }
+   ],
+   "importance": 5
+  },
+  {
+   "fact_id": "F008",
+   "statement": "Consolidated finance Cost was INR 122.25 crore as at Year ended March 31, 2026 (Year ended March 31, 2025: INR 66.23 crore).",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Finance Cost",
+     "value": "122.25",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2026"
+    },
+    {
+     "label": "Finance Cost",
+     "value": "66.23",
+     "unit": "INR crore",
+     "period": "Year ended March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Finance Cost",
+    "value": "122.25",
+    "unit": "crore",
+    "period": "Year ended March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "66.23",
+    "previous_period": "Year ended March 31, 2025",
+    "section": null
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p58:c0",
+     "doc_id": "D1",
+     "page_no": 58,
+     "quote": "Less: Finance Cost | Standalone Year ended March 31, 2026: 88.50 | Year ended March 31, 2025: 56.63 | Consolidated Year ended March 31, 2026: 122.25 | Year ended March 31, 2025: 66.23",
+     "source": null
+    }
+   ],
+   "importance": 5
+  },
+  {
+   "fact_id": "F135",
+   "statement": "Consolidated interest Expense was INR 8,026.59 lakh as at Apr'25-Mar'26 (Apr'24-Mar'25: INR 7,018.97 lakh).",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Interest Expense",
+     "value": "8026.59",
+     "unit": "INR lakh",
+     "period": "Apr'25-Mar'26"
+    },
+    {
+     "label": "Interest Expense",
+     "value": "7018.97",
+     "unit": "INR lakh",
+     "period": "Apr'24-Mar'25"
+    }
+   ],
+   "record": {
+    "metric": "Interest Expense",
+    "value": "8026.59",
+    "unit": "INR lakhs",
+    "period": "Apr'25-Mar'26",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "7018.97",
+    "previous_period": "Apr'24-Mar'25",
+    "section": "Particulars"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p319:c0",
+     "doc_id": "D1",
+     "page_no": 319,
+     "quote": "Interest Expense | Apr'25-Mar'26: 8,026.59 | Apr'24-Mar'25: 7,018.97",
+     "source": null
+    }
+   ],
+   "importance": 5
+  },
+  {
+   "fact_id": "F137",
+   "statement": "Total adjusted EBITDA was INR 14,181.82 lakhs in FY2026, compared to INR 9,925.26 lakhs in FY2025.",
+   "category": "profitability",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "adjusted ebitda",
+     "value": "14181.82",
+     "unit": "INR lakh",
+     "period": "FY2026"
+    },
+    {
+     "label": "compared",
+     "value": "9925.26",
+     "unit": "INR lakh",
+     "period": "FY2025"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p327:c0",
+     "doc_id": "D1",
+     "page_no": 327,
+     "quote": "Total adjusted EBITDA | March 31, 2026: 14,181.82 | March 31, 2025: 9,925.26",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F178",
+   "statement": "Consolidated total Borrowings was INR 1,03,584.47 lakh as at As at 31.03.2026 (As at 31.03.2025: INR 97,802.94 lakh).",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Total Borrowings",
+     "value": "103584.47",
+     "unit": "INR lakh",
+     "period": "As at 31.03.2026"
+    },
+    {
+     "label": "Total Borrowings",
+     "value": "97802.94",
+     "unit": "INR lakh",
+     "period": "As at 31.03.2025"
+    }
+   ],
+   "record": {
+    "metric": "Total Borrowings",
+    "value": "103584.47",
+    "unit": "lakhs",
+    "period": "As at 31.03.2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "97802.94",
+    "previous_period": "As at 31.03.2025",
+    "section": "Particular"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p333:c0",
+     "doc_id": "D1",
+     "page_no": 333,
+     "quote": "Total Borrowings | As at 31.03.2026: 1,03,584.47 | As at 31.03.2025: 97,802.94",
+     "source": null
+    }
+   ],
+   "importance": 5
+  },
+  {
+   "fact_id": "F265",
+   "statement": "Consolidated non-current lease liabilities were INR 4,233.88 lakh as at March 31, 2026.",
+   "category": "liquidity",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "consolidated non-current lease liabilities",
+     "value": "4233.88",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p187:c2",
+     "doc_id": "D1",
+     "page_no": 187,
+     "quote": "(ia) Lease Liabilities ................................................................ | Note No.: 22b | March 31, 2026: 4,233.88 | (` in lakhs)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F268",
+   "statement": "Consolidated current lease liabilities for the year ended March 31, 2026 were INR 1,155.73 lakh.",
+   "category": "liquidity",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "value",
+     "value": "1155.73",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p187:c2",
+     "doc_id": "D1",
+     "page_no": 187,
+     "quote": "(ia) Lease Liabilities ................................................................ | Note No.: 26b | March 31, 2026: 1,155.73 | (` in lakhs)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F120",
+   "statement": "Consolidated total, Bank Balances Other than Cash & Cash Equivalents was INR 706.12 lakh as at March 31, 2026 (March 31, 2025: INR 497.0 lakh).",
+   "category": "other",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Total, Bank Balances Other than Cash & Cash Equivalents",
+     "value": "706.12",
+     "unit": "INR lakh",
+     "period": "March 31, 2026"
+    },
+    {
+     "label": "Total, Bank Balances Other than Cash & Cash Equivalents",
+     "value": "497.0",
+     "unit": "INR lakh",
+     "period": "March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Total, Bank Balances Other than Cash & Cash Equivalents",
+    "value": "706.12",
+    "unit": "INR lakhs",
+    "period": "March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "497.0",
+    "previous_period": "March 31, 2025",
+    "section": "In Earmarked Accounts"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p298:c0",
+     "doc_id": "D1",
+     "page_no": 298,
+     "quote": "Total, Bank Balances Other than Cash & Cash Equivalents | March 31, 2026: 706.12 | March 31, 2025: 497.00",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F266",
+   "statement": "Consolidated finance Cost (Other than Unrealised Foreign Exchange (Gain) / Loss) was an outflow of INR 12,270.29 lakh for the year ended March 31, 2026.",
+   "category": "cash_flow",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "outflow",
+     "value": "12270.29",
+     "unit": "INR lakh",
+     "period": "2026"
+    }
+   ],
+   "record": null,
+   "citations": [
+    {
+     "chunk_id": "D1:p274:c0",
+     "doc_id": "D1",
+     "page_no": 274,
+     "quote": "Finance Cost (Other than Unrealised Foreign | Year ended 31.03.2026: (12,270.29)",
+     "source": null
+    }
+   ],
+   "importance": 4
+  },
+  {
+   "fact_id": "F127",
+   "statement": "Consolidated total, Other Equity was INR 92,081.68 lakh as at March 31, 2026 (March 31, 2025: INR 1,00,354.68 lakh).",
+   "category": "debt_leverage",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Total, Other Equity",
+     "value": "92081.68",
+     "unit": "INR lakh",
+     "period": "March 31, 2026"
+    },
+    {
+     "label": "Total, Other Equity",
+     "value": "100354.68",
+     "unit": "INR lakh",
+     "period": "March 31, 2025"
+    }
+   ],
+   "record": {
+    "metric": "Total, Other Equity",
+    "value": "92081.68",
+    "unit": "lakh",
+    "period": "March 31, 2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "100354.68",
+    "previous_period": "March 31, 2025",
+    "section": "Particulars"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p301:c0",
+     "doc_id": "D1",
+     "page_no": 301,
+     "quote": "Total, Other Equity | March 31, 2026: 92,081.68 | March 31, 2025: 1,00,354.68",
+     "source": null
+    }
+   ],
+   "importance": 3
+  },
+  {
+   "fact_id": "F110",
+   "statement": "Consolidated payment of Lease Liability was -INR 1,095.62 lakh as at Year ended 31.03.2026 (Year ended 31.03.2025: -INR 523.32 lakh).",
+   "category": "other",
+   "scope": "consolidated",
+   "numbers": [
+    {
+     "label": "Payment of Lease Liability",
+     "value": "-1095.62",
+     "unit": "INR lakh",
+     "period": "Year ended 31.03.2026"
+    },
+    {
+     "label": "Payment of Lease Liability",
+     "value": "-523.32",
+     "unit": "INR lakh",
+     "period": "Year ended 31.03.2025"
+    }
+   ],
+   "record": {
+    "metric": "Payment of Lease Liability",
+    "value": "-1095.62",
+    "unit": "lakhs",
+    "period": "Year ended 31.03.2026",
+    "scope": "consolidated",
+    "qualifier": null,
+    "previous_value": "-523.32",
+    "previous_period": "Year ended 31.03.2025",
+    "section": "Exchange (Gain) / Loss)"
+   },
+   "citations": [
+    {
+     "chunk_id": "D1:p274:c0",
+     "doc_id": "D1",
+     "page_no": 274,
+     "quote": "Payment of Lease Liability | Year ended 31.03.2026: (1,095.62) | ... Contd. from previous page Year ended 31.03.2025: (523.32)",
+     "source": null
+    }
+   ],
+   "importance": 3
+  }
+ ]
+}

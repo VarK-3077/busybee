@@ -1,0 +1,18 @@
+{
+  "run_id": "indoco-v11",
+  "docs_dir": "/home/ubuntu/aegis26/data/companies/indoco_remedies",
+  "bank_id": "demo_bank",
+  "out_dir": "/home/ubuntu/aegis26/workspace/indoco-v11/out",
+  "workspace_dir": "/home/ubuntu/aegis26/workspace/indoco-v11",
+  "window_tokens": 12000,
+  "notebook_budget_tokens": 16000,
+  "concurrency": 12,
+  "extract_concurrency": 12,
+  "extract_mode": "segmented",
+  "segment_min_windows": 2,
+  "report_min_importance": 4,
+  "report_max_facts_per_category": 10,
+  "models": {},
+  "proposed_exposure": "150",
+  "projected_turnover": null
+}

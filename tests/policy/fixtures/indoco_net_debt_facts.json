@@ -1,0 +1,282 @@
+[
+ {
+  "fact_id": "F087",
+  "statement": "Standalone Investments was INR 15,974.92 lakh as at March 31, 2026 (March 31, 2025: INR 5,195.92 lakh).",
+  "category": "other",
+  "citations": [
+   {
+    "chunk_id": "D1:p187:c0",
+    "doc_id": "D1",
+    "page_no": 187,
+    "quote": "(i) Investments ...................................................................... | Note No.: 6a | March 31, 2026: 15,974.92 | (` in lakhs) March 31, 2025: 5,195.92",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "Investments",
+    "value": "15974.92",
+    "unit": "INR lakh",
+    "period": "March 31, 2026"
+   },
+   {
+    "label": "Investments",
+    "value": "5195.92",
+    "unit": "INR lakh",
+    "period": "March 31, 2025"
+   }
+  ],
+  "verification": {
+   "status": "supported",
+   "method": "record_match",
+   "notes": "record value, unit, period and label found together in the cited chunk"
+  },
+  "importance": 3,
+  "source_entry_id": "D1:E428",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": {
+   "metric": "Investments",
+   "value": "15974.92",
+   "unit": "lakhs",
+   "period": "March 31, 2026",
+   "scope": "standalone",
+   "qualifier": null,
+   "previous_value": "5195.92",
+   "previous_period": "March 31, 2025",
+   "section": "Non Current Assets > Financial Assets"
+  }
+ },
+ {
+  "fact_id": "F091",
+  "statement": "Standalone bank Balances other than (iii) above was INR 706.12 lakh as at March 31, 2026 (March 31, 2025: INR 497.0 lakh).",
+  "category": "other",
+  "citations": [
+   {
+    "chunk_id": "D1:p187:c1",
+    "doc_id": "D1",
+    "page_no": 187,
+    "quote": "(iv) Bank Balances other than (iii) above ................................. | Note No.: 15 | March 31, 2026: 706.12 | (` in lakhs) March 31, 2025: 497.00",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "Bank Balances other than (iii) above",
+    "value": "706.12",
+    "unit": "INR lakh",
+    "period": "March 31, 2026"
+   },
+   {
+    "label": "Bank Balances other than (iii) above",
+    "value": "497.0",
+    "unit": "INR lakh",
+    "period": "March 31, 2025"
+   }
+  ],
+  "verification": {
+   "status": "supported",
+   "method": "record_match",
+   "notes": "record value, unit, period and label found together in the cited chunk"
+  },
+  "importance": 3,
+  "source_entry_id": "D1:E432",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": {
+   "metric": "Bank Balances other than (iii) above",
+   "value": "706.12",
+   "unit": "lakhs",
+   "period": "March 31, 2026",
+   "scope": "standalone",
+   "qualifier": null,
+   "previous_value": "497.0",
+   "previous_period": "March 31, 2025"
+  }
+ },
+ {
+  "fact_id": "F099",
+  "statement": "Standalone cash and Cash Equivalents at the end of the Financial Year was INR 1,293.72 lakh as at March 31, 2026 (March 31, 2025: INR 706.36 lakh).",
+  "category": "liquidity",
+  "citations": [
+   {
+    "chunk_id": "D1:p214:c0",
+    "doc_id": "D1",
+    "page_no": 214,
+    "quote": "Total, Cash and Cash Equivalents | March 31, 2026: 1,293.72 | March 31, 2025: 706.36",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "equivalents end financial year",
+    "value": "1293.72",
+    "unit": "INR lakh",
+    "period": "2026"
+   },
+   {
+    "label": "value",
+    "value": "706.36",
+    "unit": "INR lakh",
+    "period": "2025"
+   }
+  ],
+  "verification": {
+   "status": "resupported",
+   "method": "vdb_recite+llm_entailment",
+   "notes": "original citation failed (cited chunks do not support the statement: judge prob 0.00); re-cited from the vector store; merged duplicate D1:E542"
+  },
+  "importance": 4,
+  "source_entry_id": "D1:E459",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": null
+ },
+ {
+  "fact_id": "F152",
+  "statement": "Standalone total, Lease Liabilities was INR 5,389.61 lakh as at March 31, 2026 (March 31, 2025: INR 1,553.74 lakh).",
+  "category": "other",
+  "citations": [
+   {
+    "chunk_id": "D1:p236:c2",
+    "doc_id": "D1",
+    "page_no": 236,
+    "quote": "Total, Lease Liabilities | March 31, 2026: 5,389.61 | March 31, 2025: 1,553.74",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "Total, Lease Liabilities",
+    "value": "5389.61",
+    "unit": "INR lakh",
+    "period": "March 31, 2026"
+   },
+   {
+    "label": "Total, Lease Liabilities",
+    "value": "1553.74",
+    "unit": "INR lakh",
+    "period": "March 31, 2025"
+   }
+  ],
+  "verification": {
+   "status": "supported",
+   "method": "tiered_entailment",
+   "notes": "numbers matched; judge support prob 1.00; uncertain band resolved by the LLM"
+  },
+  "importance": 4,
+  "source_entry_id": "D1:E635",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": {
+   "metric": "Total, Lease Liabilities",
+   "value": "5389.61",
+   "unit": "INR lakhs",
+   "period": "March 31, 2026",
+   "scope": "standalone",
+   "qualifier": null,
+   "previous_value": "1553.74",
+   "previous_period": "March 31, 2025"
+  }
+ },
+ {
+  "fact_id": "F164",
+  "statement": "Standalone total adjusted EBITDA was INR 15,716.21 lakh as at March 31, 2026 (March 31, 2025: INR 12,803.17 lakh).",
+  "category": "profitability",
+  "citations": [
+   {
+    "chunk_id": "D1:p239:c0",
+    "doc_id": "D1",
+    "page_no": 239,
+    "quote": "Total adjusted EBITDA | March 31, 2026: 15,716.21 | March 31, 2025: 12,803.17",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "Total adjusted EBITDA",
+    "value": "15716.21",
+    "unit": "INR lakh",
+    "period": "March 31, 2026"
+   },
+   {
+    "label": "Total adjusted EBITDA",
+    "value": "12803.17",
+    "unit": "INR lakh",
+    "period": "March 31, 2025"
+   }
+  ],
+  "verification": {
+   "status": "supported",
+   "method": "record_match",
+   "notes": "record value, unit, period and label found together in the cited chunk"
+  },
+  "importance": 4,
+  "source_entry_id": "D1:E658",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": {
+   "metric": "Total adjusted EBITDA",
+   "value": "15716.21",
+   "unit": "lakh",
+   "period": "March 31, 2026",
+   "scope": "standalone",
+   "qualifier": null,
+   "previous_value": "12803.17",
+   "previous_period": "March 31, 2025"
+  }
+ },
+ {
+  "fact_id": "F174",
+  "statement": "Standalone total Borrowings was INR 70,560.64 lakh as at As at 31.03.2026 (As at 31.03.2025: INR 73,799.05 lakh).",
+  "category": "debt_leverage",
+  "citations": [
+   {
+    "chunk_id": "D1:p244:c0",
+    "doc_id": "D1",
+    "page_no": 244,
+    "quote": "Total Borrowings | As at 31.03.2026: 70,560.64 | As at 31.03.2025: 73,799.05",
+    "source": null
+   }
+  ],
+  "numbers": [
+   {
+    "label": "Total Borrowings",
+    "value": "70560.64",
+    "unit": "INR lakh",
+    "period": "As at 31.03.2026"
+   },
+   {
+    "label": "Total Borrowings",
+    "value": "73799.05",
+    "unit": "INR lakh",
+    "period": "As at 31.03.2025"
+   }
+  ],
+  "verification": {
+   "status": "supported",
+   "method": "tiered_entailment",
+   "notes": "numbers matched; judge support prob 1.00; uncertain band resolved by the LLM"
+  },
+  "importance": 5,
+  "source_entry_id": "D1:E674",
+  "added_by": "extract",
+  "conflicts": [],
+  "scope": "standalone",
+  "record": {
+   "metric": "Total Borrowings",
+   "value": "70560.64",
+   "unit": "lakh",
+   "period": "As at 31.03.2026",
+   "scope": "standalone",
+   "qualifier": null,
+   "previous_value": "73799.05",
+   "previous_period": "As at 31.03.2025"
+  }
+ }
+]

@@ -1,0 +1,38 @@
+{
+  "company": "Bikaji Foods International Limited",
+  "annual_report_fy2025_26.pdf": {
+    "title": "Bikaji Foods Annual Report 2025-26",
+    "kind": "annual_report",
+    "url": "https://www.bikaji.com/pub/media/Bikaji-Annual-Report-2025-26.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 381
+  },
+  "drhp_2022-02.pdf": {
+    "title": "Bikaji Foods Draft Red Herring Prospectus, 22 Feb 2022",
+    "kind": "drhp",
+    "url": "https://investmentbank.kotak.com/downloads/bikaji-foods-international-limited-DRHP.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 433
+  },
+  "icra_rationale_2025-08-25.pdf": {
+    "title": "ICRA rating rationale, 25 Aug 2025 (AA-/Stable reaffirmed)",
+    "kind": "rating_rationale",
+    "url": "https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/137188",
+    "fetched_at": "2026-10-25",
+    "pages": 7
+  },
+  "news_q1fy27_indiantelevision.md": {
+    "title": "Bikaji Foods posts 12.5 per cent revenue growth in Q1 FY27 despite cost pressures",
+    "kind": "news",
+    "url": "https://indiantelevision.com/mam/bikaji-foods-posts-12-5-per-cent-revenue-growth-in-q1-fy27-despite-cost-pressures/",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_q1fy27_revenue.md": {
+    "title": "Bikaji Foods Q1 Revenue Rises 12.5%, Western Snacks Grow 21.3%",
+    "kind": "news",
+    "url": "https://bwretailworld.com/companies/bikaji-foods-q1-revenue-rises-12-5-western-snacks-grow-21-3",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  }
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block notice %}{{ notice }}{% endblock %}
+{% block content %}
+<main class="bb-page bb-flow" data-paginate aria-labelledby="report-title">
+  <header class="bb-doc-header">
+    <p class="bb-doc-kicker"><span>Credit review · Confidential</span><span>{{ bank_label }}</span></p>
+    <h1 class="bb-doc-title" id="report-title">{{ company }}</h1>
+    <p class="bb-doc-subtitle">{{ subtitle }}</p>
+    <dl class="bb-meta">
+      <div><dt>Borrower</dt><dd>{{ company }}</dd></div>
+      <div><dt>Bank policy</dt><dd><a href="policy.html">{{ policy_version or bank_id }}</a></dd></div>
+      <div><dt>Documents</dt><dd>{{ document_count }} document{% if document_count != 1 %}s{% endif %}, {{ page_count }} pages</dd></div>
+      <div><dt>Generated</dt><dd>{{ generated_at }}</dd></div>
+    </dl>
+  </header>
+  <div class="bb-report">
+    {{ recommendation }}
+    {{ scores }}
+    {{ facts }}
+    {{ inferences }}
+    {{ concerns }}
+    {{ appendix }}
+  </div>
+  {{ footer }}
+</main>
+{% endblock %}
+{% block blobs %}
+<script type="application/json" id="bb-chunks">{{ chunks | tojson }}</script>
+<script type="application/json" id="bb-lean">{{ lean_records | tojson }}</script>
+{% endblock %}

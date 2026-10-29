@@ -1,0 +1,10 @@
+{
+  "company": "Acme Textiles Limited",
+  "annual_report.md": {"title": "Acme Textiles Limited Annual Report 2024-25", "kind": "annual_report"},
+  "financial_statements.pdf": {"title": "Acme Textiles Audited Financial Statements FY2024-25", "kind": "financial_statements"},
+  "rating_rationale.md": {"title": "Meridian Ratings Rationale June 2025", "kind": "rating_rationale"},
+  "covenant_sheet.md": {"title": "Acme Textiles Financial Covenants", "kind": "covenant"},
+  "news_1.md": {"title": "Acme to add 60,000 spindles in Rs 120 crore expansion (18 Jul 2025)", "kind": "news"},
+  "news_2.md": {"title": "Acme Q1 profit rises; revenue momentum continues (5 Aug 2025)", "kind": "news"},
+  "bank_statement_summary.md": {"title": "Acme Textiles Bank Statement Summary FY2024-25", "kind": "bank_statement"}
+}

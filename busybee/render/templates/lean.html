@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="bb-page">
+  <header class="bb-doc-header">
+    <p class="bb-doc-kicker"><span>Lean artifact · {{ artifact.artifact_id }}</span><span>{{ artifact.kind.value|capitalize }}</span></p>
+    <h1 class="bb-doc-title">{{ title }}</h1>
+    <p class="bb-doc-subtitle"><a href="{{ source_name }}">lean/{{ source_name }}</a></p>
+    <dl class="bb-meta">
+      <div><dt>SHA-256</dt><dd class="bb-mono">{{ short_hash or "—" }}</dd></div>
+      <div><dt>Theorems</dt><dd>{{ artifact.theorems|length }}</dd></div>
+      <div><dt>Status</dt><dd>{{ status_label }}</dd></div>
+    </dl>
+    <p class="bb-source-actions"><a class="bb-jump" href="../index.html">Back to the report ↖</a></p>
+  </header>
+
+  <section class="bb-lean" id="{{ anchor_id }}" aria-label="Lean artifact {{ artifact.artifact_id }}">
+    <div class="bb-lean-head">
+      <span class="bb-lean-title">{{ title }}</span>
+      <span class="bb-lean-file">lean/{{ source_name }}</span>
+      <span class="bb-lean-hash">sha256 {{ short_hash }}</span>
+      <span class="bb-badge" data-status="{{ status }}">{{ status_label }}</span>
+    </div>
+    <pre class="bb-code bb-code--lines"><code>{{ line_spans }}</code></pre>
+    <div class="bb-compile" data-ok="{{ 'true' if compile_ok else 'false' }}">
+      <div class="bb-compile-head">{{ compile_head }}</div>
+      <pre>{{ compile_output }}</pre>
+    </div>
+  </section>
+
+  {% if explanation %}
+  <section class="bb-section" id="lean-explanation">
+    <h2 class="bb-h2">In plain English</h2>
+    {{ explanation }}
+  </section>
+  {% endif %}
+</main>
+{% endblock %}

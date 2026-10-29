@@ -1,0 +1,70 @@
+[
+  {
+    "concern_id": "C005",
+    "opinion": "What is the status of the INR 1,584.31 lakh GST demand from Goa and the INR 1,031.99 lakh deposit under protest, and what is the potential liability if the appeals are unsuccessful?",
+    "fact_ids": [
+      "F150",
+      "F151"
+    ],
+    "reasoning": "These are significant contingent liabilities that could further strain liquidity. The draft lists them but does not assess the probability of loss or the impact on cash flow if the company loses the appeals. (entailment rejected the extracted statement)",
+    "query_used": "GST demand Goa appeal status potential liability",
+    "found": false,
+    "severity": "medium",
+    "dropped_reason": "ranked below the top 5 open concerns (severity medium)"
+  },
+  {
+    "concern_id": "C007",
+    "opinion": "What is the impact of the 100% variable interest rate exposure on the company's interest costs if rates rise by 100-200 bps?",
+    "fact_ids": [
+      "F077",
+      "F007",
+      "F227"
+    ],
+    "reasoning": "The company has no fixed-rate debt, making it highly sensitive to interest rate hikes. A sensitivity analysis is needed to understand the potential increase in finance costs and its impact on EBITDA and DSCR. (retrieved passages do not answer the question)",
+    "query_used": "interest rate sensitivity analysis variable debt cost impact",
+    "found": false,
+    "severity": "medium",
+    "dropped_reason": "ranked below the top 5 open concerns (severity medium)"
+  },
+  {
+    "concern_id": "C009",
+    "opinion": "What is the detailed breakdown of the INR 1,77,925.65 lakh in assets pledged as security, and what is the unencumbered asset base available for future borrowing?",
+    "fact_ids": [
+      "F152",
+      "F159"
+    ],
+    "reasoning": "Understanding the collateral coverage is important for assessing the company's ability to raise additional debt if needed. The draft states the total pledged amount but not the composition or the value of unencumbered assets. (retrieved passages do not answer the question)",
+    "query_used": "assets pledged security breakdown unencumbered assets",
+    "found": false,
+    "severity": "medium",
+    "dropped_reason": "ranked below the top 5 open concerns (severity medium)"
+  },
+  {
+    "concern_id": "C010",
+    "opinion": "What is the status of the FPP Holding Company, LLC going concern issue, and what is the plan to address the negative net worth of INR 4,225.11 lakh?",
+    "fact_ids": [
+      "F037",
+      "F095",
+      "F066"
+    ],
+    "reasoning": "The auditor has raised a material uncertainty regarding the going concern of a subsidiary. This could lead to impairment charges or further losses, impacting the consolidated financials and credit metrics. (entailment rejected the extracted statement)",
+    "query_used": "FPP Holding LLC going concern negative net worth plan",
+    "found": false,
+    "severity": "medium",
+    "dropped_reason": "ranked below the top 5 open concerns (severity medium)"
+  },
+  {
+    "concern_id": "C011",
+    "opinion": "What is the expected timeline for the completion of the R&D projects under development (INR 6,172.25 lakh) and their potential contribution to revenue?",
+    "fact_ids": [
+      "F040",
+      "F048",
+      "F258"
+    ],
+    "reasoning": "The company is investing in R&D, but the draft does not provide a timeline for commercialization or the expected revenue impact. This is important for assessing the future growth potential and the return on investment. (retrieved passages do not answer the question)",
+    "query_used": "R&D projects timeline commercialization revenue contribution",
+    "found": false,
+    "severity": "low",
+    "dropped_reason": "ranked below the top 5 open concerns (severity low)"
+  }
+]

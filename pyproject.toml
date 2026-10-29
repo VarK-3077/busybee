@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "busybee"
+version = "0.1.0"
+description = "Auditable credit-review generation around an LLM."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "pydantic>=2",
+  "httpx",
+  "openai",
+  "anthropic",
+  "pymupdf",
+  "jinja2",
+  "numpy",
+  "fastembed",
+  "pyyaml",
+  "typer",
+  "rich",
+  "tiktoken",
+]
+
+[project.scripts]
+busybee = "busybee.cli:app"
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "pytest-asyncio",
+  "ruff",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["busybee"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

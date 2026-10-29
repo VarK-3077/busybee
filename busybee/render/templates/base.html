@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ root }}assets/tokens.css">
+  <link rel="stylesheet" href="{{ root }}assets/document.css">
+  <link rel="stylesheet" href="{{ root }}assets/components.css">
+  <script src="{{ root }}assets/components.js" defer></script>
+</head>
+<body class="bb-desk">
+{% block notice %}{% endblock %}
+{% block content %}{% endblock %}
+{% block blobs %}{% endblock %}
+</body>
+</html>

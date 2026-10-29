@@ -1,0 +1,222 @@
+{
+ "source": "workspace/indoco-v3/llm_log.jsonl (replies in the old verbose format, trimmed)",
+ "extract": {
+  "entries": [
+   {
+    "statement": "Total Cash and Cash Equivalents was INR 1,293.72 lakhs as of March 31, 2026, compared to INR 706.36 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c0"
+    ],
+    "category": "liquidity",
+    "kind": "number",
+    "importance": 4
+   },
+   {
+    "statement": "Balances with Banks in Current Accounts were INR 1,211.19 lakhs as of March 31, 2026, compared to INR 624.06 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c0"
+    ],
+    "category": "liquidity",
+    "kind": "number",
+    "importance": 3
+   },
+   {
+    "statement": "Total Bank Balances Other than Cash & Cash Equivalents were INR 706.12 lakhs as of March 31, 2026, compared to INR 497.00 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c0"
+    ],
+    "category": "liquidity",
+    "kind": "number",
+    "importance": 2
+   },
+   {
+    "statement": "Total Current Financial Assets - Loans were INR 455.74 lakhs as of March 31, 2026, compared to INR 328.86 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c0"
+    ],
+    "category": "other",
+    "kind": "number",
+    "importance": 2
+   },
+   {
+    "statement": "Total Other Financial Assets - Current were INR 3,558.86 lakhs as of March 31, 2026, compared to INR 3,241.92 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c1"
+    ],
+    "category": "other",
+    "kind": "number",
+    "importance": 2
+   },
+   {
+    "statement": "Consideration receivable from Warren Remedies Private Limited in respect of brand sale was INR 2,547.62 lakhs (inclusive of GST) as of March 31, 2026, compared to INR 2,445.43 lakhs (inclusive of GST) as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p214:c1"
+    ],
+    "category": "revenue",
+    "kind": "number",
+    "importance": 3
+   },
+   {
+    "statement": "Total Other Current Assets were INR 14,576.87 lakhs as of March 31, 2026, compared to INR 13,587.95 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p215:c0"
+    ],
+    "category": "other",
+    "kind": "number",
+    "importance": 2
+   },
+   {
+    "statement": "Balance with Statutory / Government Authorities included in Other Current Assets was INR 8,602.54 lakhs as of March 31, 2026, compared to INR 7,144.27 lakhs as of March 31, 2025.",
+    "chunk_ids": [
+     "D1:p215:c0"
+    ],
+    "category": "other",
+    "kind": "number",
+    "importance": 3
+   }
+  ]
+ },
+ "verify_entailment": {
+  "verdict": "supported",
+  "quote": "Total, Research & Development Expenses | Apr'25-Mar'26: 7,953.89",
+  "note": "The passage explicitly states 'Total, Research & Development Expenses' for 'Apr'25-Mar'26' (year ended March 31, 2026) as 7,953.89, with the header indicating amounts are in INR lakhs."
+ },
+ "verify_relevance": {
+  "decisions": [
+   {
+    "entry_id": "D1:E001",
+    "keep": true,
+    "reason": "Identifies key governance personnel (Chairman, MD, JMD) relevant to credit assessment."
+   },
+   {
+    "entry_id": "D1:E002",
+    "keep": false,
+    "reason": "Administrative identifier (CIN) with no bearing on creditworthiness."
+   },
+   {
+    "entry_id": "D1:E003",
+    "keep": false,
+    "reason": "Registered office address is administrative trivia."
+   },
+   {
+    "entry_id": "D1:E004",
+    "keep": false,
+    "reason": "List of bankers is general information; specific banking relationships and limits are covered in other entries."
+   },
+   {
+    "entry_id": "D1:E005",
+    "keep": false,
+    "reason": "Marketing/industry ranking trivia; does not directly impact repayment capacity or leverage."
+   },
+   {
+    "entry_id": "D1:E006",
+    "keep": false,
+    "reason": "Prescription volume is a marketing metric, not a direct financial indicator for credit sizing."
+   },
+   {
+    "entry_id": "D1:E007",
+    "keep": false,
+    "reason": "Qualitative statement about meeting targets; lacks specific financial data."
+   },
+   {
+    "entry_id": "D1:E008",
+    "keep": false,
+    "reason": "Product-specific marketing achievement; irrelevant to corporate credit risk."
+   },
+   {
+    "entry_id": "D1:E009",
+    "keep": true,
+    "reason": "Regulatory compliance (USFDA) is a key operational risk factor for a pharmaceutical company."
+   },
+   {
+    "entry_id": "D1:E010",
+    "keep": true,
+    "reason": "Regulatory compliance (EU GMP) is a key operational risk factor."
+   },
+   {
+    "entry_id": "D1:E011",
+    "keep": false,
+    "reason": "Award recognition is marketing trivia."
+   },
+   {
+    "entry_id": "D1:E012",
+    "keep": false,
+    "reason": "Product launch in a specific market is marketing/operational detail, not a core credit metric."
+   },
+   {
+    "entry_id": "D1:E013",
+    "keep": false,
+    "reason": "Sustainability award is trivia."
+   },
+   {
+    "entry_id": "D1:E014",
+    "keep": false,
+    "reason": "List of manufacturing sites is operational detail; specific asset values are in financial notes."
+   },
+   {
+    "entry_id": "D1:E015",
+    "keep": false,
+    "reason": "Prescription volume is a marketing metric."
+   },
+   {
+    "entry_id": "D1:E016",
+    "keep": false,
+    "reason": "Production volume (MT) is an operational metric, not a direct financial credit input."
+   },
+   {
+    "entry_id": "D1:E017",
+    "keep": false,
+    "reason": "Production volume (units) is an operational metric."
+   },
+   {
+    "entry_id": "D1:E018",
+    "keep": false,
+    "reason": "Production volume (units) is an operational metric."
+   },
+   {
+    "entry_id": "D1:E019",
+    "keep": false,
+    "reason": "ESG metric (carbon reduction) is not a primary credit scoring input."
+   },
+   {
+    "entry_id": "D1:E020",
+    "keep": false,
+    "reason": "ESG metric (water conservation) is not a primary credit scoring input."
+   }
+  ]
+ },
+ "verify_conflict": {
+  "results": [
+   {
+    "pair": 1,
+    "conflict": false,
+    "metric": "",
+    "note": "The statements report different metrics: Profit before Tax versus Profit after Tax."
+   },
+   {
+    "pair": 2,
+    "conflict": false,
+    "metric": "",
+    "note": "The statements report different metrics: Profit before Tax versus Profit after Tax."
+   },
+   {
+    "pair": 3,
+    "conflict": false,
+    "metric": "",
+    "note": "The statements report different metrics: Profit before Tax versus Profit after Tax."
+   },
+   {
+    "pair": 4,
+    "conflict": false,
+    "metric": "",
+    "note": "The statements report different metrics: Depreciation, Amortization and Impairment Expenses versus Exceptional Items."
+   },
+   {
+    "pair": 5,
+    "conflict": false,
+    "metric": "",
+    "note": "The statements report different metrics: Depreciation, Amortization and Impairment Expenses versus Total Comprehensive Income."
+   }
+  ]
+ }
+}

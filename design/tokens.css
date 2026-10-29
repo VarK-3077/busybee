@@ -1,0 +1,135 @@
+/*
+  BusyBee design tokens.
+
+  Every colour, type size, space, radius and shadow used by document.css and
+  components.css is declared here as a CSS custom property, so the whole report can be
+  re-themed from one file. The look is a typeset paper memo: white A4 sheets on a dark PDF-reader desk, near-black ink, one deep-navy accent for everything interactive, and muted
+  status colours that read clearly in print and in greyscale (each status also has a
+  distinct glyph in components.css, so colour is never the only signal).
+
+  Groups: paper/ink, accent, status (verification, Lean, grades, confidence, decision),
+  type families and scale, spacing scale, radii, shadows, motion, layout widths.
+  The print block at the end flattens shadows and the desk so every sheet prints as plain
+  black-on-white A4.
+*/
+
+:root {
+  --bb-desk: #282828;
+  --bb-paper: #ffffff;
+  --bb-paper-sunk: #f6f4ee;
+  --bb-ink: #1a1c20;
+  --bb-ink-soft: #3a3d44;
+  --bb-muted: #6a6e76;
+  --bb-faint: #9a9da3;
+  --bb-rule: #dcd8cf;
+  --bb-rule-strong: #b9b4a8;
+
+  --bb-accent: #1f3c6e;
+  --bb-accent-ink: #18305a;
+  --bb-accent-tint: #e9eef7;
+  --bb-accent-line: #b8c6de;
+  --bb-focus: #3b6fd1;
+
+  --bb-highlight: #fff2b8;
+  --bb-highlight-line: #e2c45a;
+  --bb-highlight-strong: #ffe27a;
+
+  --bb-supported: #2e6a47;
+  --bb-supported-tint: #e8f2ec;
+  --bb-resupported: #7a5d12;
+  --bb-resupported-tint: #f7f0dc;
+  --bb-unsupported: #9e3426;
+  --bb-unsupported-tint: #f8e8e4;
+
+  --bb-proved: #2e6a47;
+  --bb-proved-tint: #e8f2ec;
+  --bb-unchecked: #686c74;
+  --bb-unchecked-tint: #eeeeec;
+  --bb-failed: #9e3426;
+  --bb-failed-tint: #f8e8e4;
+  --bb-conflict: #8a5a0e;
+  --bb-conflict-tint: #f8eedb;
+
+  --bb-grade-good: #2e6a47;
+  --bb-grade-good-tint: #e8f2ec;
+  --bb-grade-fair: #4f6420;
+  --bb-grade-fair-tint: #eef2e1;
+  --bb-grade-weak: #8a5a0e;
+  --bb-grade-weak-tint: #f8eedb;
+  --bb-grade-poor: #9e3426;
+  --bb-grade-poor-tint: #f8e8e4;
+  --bb-grade-none: #686c74;
+  --bb-grade-none-tint: #eeeeec;
+
+  --bb-notice: #7a5d12;
+  --bb-notice-tint: #fbf5e3;
+  --bb-notice-line: #e6d39b;
+
+  --bb-font-serif: "Iowan Old Style", "Charter", "Bitstream Charter", "Source Serif 4",
+    "Source Serif Pro", "Sitka Text", Cambria, Georgia, serif;
+  --bb-font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial,
+    sans-serif;
+  --bb-font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Menlo,
+    Consolas, "Liberation Mono", monospace;
+
+  --bb-text-2xs: 0.6875rem;
+  --bb-text-xs: 0.75rem;
+  --bb-text-sm: 0.8125rem;
+  --bb-text-base: 0.96875rem;
+  --bb-text-md: 1.0625rem;
+  --bb-text-lg: 1.25rem;
+  --bb-text-xl: 1.625rem;
+  --bb-leading: 1.55;
+  --bb-leading-tight: 1.25;
+  --bb-tracking-caps: 0.08em;
+
+  --bb-space-1: 0.25rem;
+  --bb-space-2: 0.5rem;
+  --bb-space-3: 0.75rem;
+  --bb-space-4: 1rem;
+  --bb-space-5: 1.5rem;
+  --bb-space-6: 2rem;
+  --bb-space-7: 3rem;
+
+  --bb-radius-xs: 2px;
+  --bb-radius-sm: 4px;
+  --bb-radius-md: 6px;
+  --bb-radius-pill: 999px;
+
+  --bb-shadow-page: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 6px 24px rgba(0, 0, 0, 0.55);
+  --bb-shadow-pop: 0 1px 2px rgba(20, 24, 34, 0.08), 0 10px 30px rgba(20, 24, 34, 0.16);
+  --bb-shadow-float: 0 1px 2px rgba(20, 24, 34, 0.1), 0 6px 18px rgba(20, 24, 34, 0.16);
+
+  --bb-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --bb-fast: 120ms;
+  --bb-slow: 900ms;
+
+  --bb-page-width: 210mm;
+  --bb-page-min-height: 297mm;
+  --bb-page-pad-x: 22mm;
+  --bb-page-pad-y: 20mm;
+  --bb-margin-label: 14mm;
+  --bb-sheet-w: 210mm;
+  --bb-sheet-h: 297mm;
+  --bb-sheet-gap: 8mm;
+}
+
+@media screen and (max-width: 860px) {
+  :root {
+    --bb-page-pad-x: 6vw;
+    --bb-page-pad-y: 8vw;
+    --bb-margin-label: 0mm;
+  }
+}
+
+@media print {
+  :root {
+    --bb-desk: #ffffff;
+    --bb-paper: #ffffff;
+    --bb-paper-sunk: #f7f7f7;
+    --bb-shadow-page: none;
+    --bb-shadow-pop: none;
+    --bb-shadow-float: none;
+    --bb-highlight: transparent;
+  }
+}

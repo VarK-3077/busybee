@@ -1,0 +1,9 @@
+{"plugins": [],
+ "package": "BusyBee",
+ "options": {},
+ "name": "BusyBee.Example",
+ "isModule": false,
+ "importArts":
+ {"BusyBee.Common":
+  [["/tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/lib/lean/BusyBee/Common.olean"]]},
+ "dynlibs": []}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "ingest",
+    "state": "done",
+    "started_at": "2026-10-28T12:50:30.243135Z",
+    "finished_at": "2026-10-28T12:52:22.151981Z",
+    "error": null
+  },
+  {
+    "name": "index",
+    "state": "done",
+    "started_at": "2026-10-28T12:52:22.152426Z",
+    "finished_at": "2026-10-28T12:54:30.923948Z",
+    "error": null
+  },
+  {
+    "name": "extract",
+    "state": "done",
+    "started_at": "2026-10-28T12:52:22.162743Z",
+    "finished_at": "2026-10-28T13:04:19.170069Z",
+    "error": null
+  },
+  {
+    "name": "verify",
+    "state": "done",
+    "started_at": "2026-10-28T13:04:19.170834Z",
+    "finished_at": "2026-10-28T13:08:36.416751Z",
+    "error": null
+  },
+  {
+    "name": "scores",
+    "state": "done",
+    "started_at": "2026-10-28T13:08:36.417157Z",
+    "finished_at": "2026-10-28T13:12:38.217355Z",
+    "error": null
+  },
+  {
+    "name": "infer",
+    "state": "done",
+    "started_at": "2026-10-28T13:08:36.555220Z",
+    "finished_at": "2026-10-28T13:10:30.128804Z",
+    "error": null
+  },
+  {
+    "name": "adversary",
+    "state": "done",
+    "started_at": "2026-10-28T13:12:38.217857Z",
+    "finished_at": "2026-10-28T13:22:35.674829Z",
+    "error": null
+  },
+  {
+    "name": "compose",
+    "state": "done",
+    "started_at": "2026-10-28T13:22:35.675332Z",
+    "finished_at": "2026-10-28T13:25:40.262991Z",
+    "error": null
+  },
+  {
+    "name": "render",
+    "state": "done",
+    "started_at": "2026-10-28T13:25:40.263550Z",
+    "finished_at": "2026-10-28T13:25:40.446461Z",
+    "error": null
+  }
+]

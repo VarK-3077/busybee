@@ -1,0 +1,300 @@
+{
+  "note": "",
+  "budget": {
+    "per_component": 6,
+    "per_run": 60,
+    "extract_calls": 23
+  },
+  "added_fact_ids": [
+    "F255",
+    "F256",
+    "F257",
+    "F258",
+    "F259"
+  ],
+  "searches": [
+    {
+      "slot": "cfads",
+      "score_ids": [
+        "financial_strength_score"
+      ],
+      "component": "income tax paid",
+      "queries": [
+        "consolidated Income taxes paid (net of refunds) cash flow from operating activities FY2026",
+        "consolidated Direct taxes paid (net) cash flow from operating activities FY2026",
+        "consolidated income tax paid cash flow statement FY2026",
+        "income tax paid, net of refunds) for the latest audited year (policy section 4).",
+        "income tax paid Cash flow available for debt service: EBITDA less cash taxes paid"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p273:c1",
+          "score": 1.0,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E001",
+      "outcome": "dropped",
+      "fact_id": "",
+      "note": "unsupported: cited chunks do not support the statement: cited chunks do not support it"
+    },
+    {
+      "slot": "net_debt",
+      "score_ids": [
+        "financial_strength_score"
+      ],
+      "component": "total borrowings",
+      "queries": [
+        "consolidated total borrowings balance sheet FY2026",
+        "Total borrowings (short and long term, including current maturities) plus lease liabilities (current and n",
+        "total borrowings Total borrowings less cash, bank balances and liquid investments, latest audited year"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p273:c2",
+          "score": 0.7702,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p302:c1",
+          "score": 0.7648,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p312:c0",
+          "score": 0.7845,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p273:c1",
+          "score": 0.7844,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p303:c1",
+          "score": 0.7818,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p271:c0",
+          "score": 0.7709,
+          "outcome": "not_found"
+        }
+      ],
+      "entry_id": "",
+      "outcome": "not_found",
+      "fact_id": "",
+      "note": ""
+    },
+    {
+      "slot": "debt_service",
+      "score_ids": [
+        "financial_strength_score"
+      ],
+      "component": "interest paid",
+      "queries": [
+        "consolidated Interest paid cash flow from financing activities FY2026",
+        "consolidated Finance costs paid cash flow from financing activities FY2026",
+        "consolidated interest paid cash flow statement FY2026",
+        "Interest paid plus scheduled principal repayments of borrowings (repayment of long-term borrowings and",
+        "interest paid Interest paid plus scheduled principal repayments in the year"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p274:c0",
+          "score": 0.8095,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E002",
+      "outcome": "dropped",
+      "fact_id": "",
+      "note": "unsupported: cited chunks do not support the statement: cited chunks do not support it"
+    },
+    {
+      "slot": "tangible_net_worth",
+      "score_ids": [
+        "maximum_exposure"
+      ],
+      "component": "total equity",
+      "queries": [
+        "consolidated total equity balance sheet FY2026",
+        "total equity Shareholders' equity (net worth) minus intangible assets (goodwill, other intangibles and intangibles under development) at the latest audited year end (policy section 2).",
+        "total equity Tangible net worth at year end"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p275:c1",
+          "score": 0.7839,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E003",
+      "outcome": "verified",
+      "fact_id": "F255",
+      "note": ""
+    },
+    {
+      "slot": "net_debt",
+      "score_ids": [
+        "financial_strength_score"
+      ],
+      "component": "current investments",
+      "queries": [
+        "consolidated current investments balance sheet FY2026",
+        "current investments only), all at the latest audited year end on the consolidated basis when consolidated sta",
+        "current investments Total borrowings less cash, bank balances and liquid investments, latest audited year"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p299:c0",
+          "score": 0.7806,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p303:c1",
+          "score": 0.7991,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p275:c1",
+          "score": 0.7819,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p273:c2",
+          "score": 0.7744,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p271:c1",
+          "score": 0.7709,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E004",
+      "outcome": "verified",
+      "fact_id": "F256",
+      "note": ""
+    },
+    {
+      "slot": "debt_service",
+      "score_ids": [
+        "financial_strength_score"
+      ],
+      "component": "payment of lease liabilities",
+      "queries": [
+        "consolidated Payment of lease liabilities cash flow from financing activities FY2026",
+        "consolidated Principal repayment of lease liabilities cash flow from financing activities FY2026",
+        "consolidated payment of lease liabilities cash flow statement FY2026",
+        "payment of lease liabilities Interest paid plus scheduled principal repayments of borrowings (repayment of long-term borrowings and lease principal) in the latest audited year (policy section 4).",
+        "payment of lease liabilities Interest paid plus scheduled principal repayments in the year"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p324:c2",
+          "score": 0.7977,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E005",
+      "outcome": "dropped",
+      "fact_id": "",
+      "note": "unsupported: cited chunks do not support the statement: cited chunks do not support it"
+    },
+    {
+      "slot": "tangible_net_worth",
+      "score_ids": [
+        "maximum_exposure"
+      ],
+      "component": "other intangible assets",
+      "queries": [
+        "consolidated other intangible assets balance sheet FY2026",
+        "other intangible assets Shareholders' equity (net worth) minus intangible assets (goodwill, other intangibles and intangibles under development) at the latest audited year end (policy section 2).",
+        "other intangible assets Tangible net worth at year end"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p273:c2",
+          "score": 0.7377,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p293:c0",
+          "score": 0.7829,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p329:c2",
+          "score": 0.7748,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p321:c1",
+          "score": 0.7139,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p271:c0",
+          "score": 0.7967,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E006",
+      "outcome": "verified",
+      "fact_id": "F257",
+      "note": ""
+    },
+    {
+      "slot": "tangible_net_worth",
+      "score_ids": [
+        "maximum_exposure"
+      ],
+      "component": "intangible assets under development",
+      "queries": [
+        "consolidated intangible assets under development balance sheet FY2026",
+        "intangible assets under development Shareholders' equity (net worth) minus intangible assets (goodwill, other intangibles and intangibles under development) at the latest audited year end (policy section 2).",
+        "intangible assets under development Tangible net worth at year end"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p293:c0",
+          "score": 0.7983,
+          "outcome": "not_found"
+        },
+        {
+          "chunk_id": "D1:p293:c2",
+          "score": 0.7655,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E007",
+      "outcome": "verified",
+      "fact_id": "F258",
+      "note": ""
+    },
+    {
+      "slot": "tangible_net_worth",
+      "score_ids": [
+        "maximum_exposure"
+      ],
+      "component": "goodwill",
+      "queries": [
+        "consolidated goodwill balance sheet FY2026",
+        "goodwill, other intangibles and intangibles under development) at the latest audited year end (pol",
+        "goodwill Tangible net worth at year end"
+      ],
+      "hits": [
+        {
+          "chunk_id": "D1:p330:c1",
+          "score": 0.7767,
+          "outcome": "found"
+        }
+      ],
+      "entry_id": "SLOT:E008",
+      "outcome": "verified",
+      "fact_id": "F259",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "company": "Tata Capital Limited",
+  "annual_report_fy2025_26.pdf": {
+    "title": "Tata Capital Annual Report 2025-26 (35th)",
+    "kind": "annual_report",
+    "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/25-26/tata-capital-limited-annual-report-fy-2025-26.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 584
+  },
+  "rhp_2025.pdf": {
+    "title": "Tata Capital Red Herring Prospectus, 26 Sep 2025",
+    "kind": "drhp",
+    "url": "https://www.bnpparibas.bank.in/app/uploads/sites/25/2025/09/tata-capital-limited-rhp-vf.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 836
+  },
+  "crisil_rationale_2026-07-22.html": {
+    "title": "CRISIL rating rationale, 22 Jul 2026 (AAA/Stable)",
+    "kind": "rating_rationale",
+    "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/TataCapitalLimited_July%2022_%202026_RR_400616.html",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "icra_rationale_2026-07-21.pdf": {
+    "title": "ICRA rating rationale, 21 Jul 2026 (AAA/Stable)",
+    "kind": "rating_rationale",
+    "url": "https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/144339",
+    "fetched_at": "2026-10-25",
+    "pages": 12
+  },
+  "news_q1fy27_outlook.md": {
+    "title": "Tata Capital Q1 Net Profit Rises 56% YoY to ₹1,547 Cr Amid Strong Lending Growth",
+    "kind": "news",
+    "url": "https://www.outlookbusiness.com/corporate/tata-capital-q1-net-profit-rises-56-yoy-to-1547-cr-amid-strong-lending-growth",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_q1fy27_results.md": {
+    "title": "Tata Capital Q1 results: PAT jumps 56% YoY to Rs 1,547 crore; AUM rises 22%",
+    "kind": "news",
+    "url": "https://www.businesstoday.in/markets/stocks/story/tata-capital-q1-results-pat-jumps-56-yoy-to-rs-1547-crore-aum-rises-22-545756-2026-07-28",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  }
+}

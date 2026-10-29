@@ -1,0 +1,333 @@
+# Machine-readable ScoreSpec list matching busybee.schema.policy (see policy.md section 10).
+# Scale is an integer multiplier: INR crore x 100 means 12.34 crore is stored as 1234.
+scores:
+  - score_id: financial_strength_score
+    name: "Financial Strength Score"
+    unit: "points"
+    value_meaning: "Total points out of 100; higher is stronger."
+    description: "Sum of six ratio-band scores (net debt/EBITDA 25, interest coverage 20, DSCR 20, current ratio 15, total debt/equity 10, revenue growth 10), 0 to 100. Policy section 10.1. All thresholds are tested by cross-multiplication, never by division."
+    inputs:
+      - slot: net_debt
+        description: "Total borrowings less cash, bank balances and liquid investments, latest audited year"
+        unit: "INR crore x 100"
+        scale: 100
+        definition: "Total borrowings (short and long term, including current maturities) plus lease liabilities (current and non-current) minus cash and bank balances minus liquid investments (current investments only), all at the latest audited year end on the consolidated basis when consolidated statements exist (policy section 4)."
+        derive_from: ["total borrowings", "lease liabilities", "cash and bank balances", "liquid investments"]
+      - slot: ebitda
+        description: "Operating profit before depreciation, interest and tax, excluding other income"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: interest_expense
+        description: "Gross finance cost for the year"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: cfads
+        description: "Cash flow available for debt service: EBITDA less cash taxes paid"
+        unit: "INR crore x 100"
+        scale: 100
+        definition: "EBITDA minus cash taxes paid (income tax paid, net of refunds) for the latest audited year (policy section 4)."
+        derive_from: ["ebitda", "cash taxes paid"]
+      - slot: debt_service
+        description: "Interest paid plus scheduled principal repayments in the year"
+        unit: "INR crore x 100"
+        scale: 100
+        definition: "Interest paid plus scheduled principal repayments of borrowings (repayment of long-term borrowings and lease principal) in the latest audited year (policy section 4)."
+        derive_from: ["interest paid", "scheduled principal repayments"]
+      - slot: total_debt
+        description: "Total borrowings (short and long term, including current maturities and leases)"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: total_equity
+        description: "Shareholders' equity (net worth) at year end"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: current_assets
+        description: "Total current assets at year end"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: current_liabilities
+        description: "Total current liabilities at year end"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: revenue_current
+        description: "Revenue from operations, latest audited year"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: revenue_previous
+        description: "Revenue from operations, previous audited year"
+        unit: "INR crore x 100"
+        scale: 100
+    lean_function: financial_strength_score
+    grades:
+      - label: "Strong"
+        condition_text: "score between 80 and 100 inclusive"
+      - label: "Adequate"
+        condition_text: "score between 60 and 79 inclusive"
+      - label: "Moderate"
+        condition_text: "score between 40 and 59 inclusive"
+      - label: "Weak"
+        condition_text: "score between 0 and 39 inclusive"
+  - score_id: internal_risk_grade
+    name: "Internal Risk Grade"
+    unit: "grade"
+    value_meaning: "Risk grade from 1 (best) to 8 (decline); lower is better."
+    description: "Grade 1 (best) to 8 (decline) from the Financial Strength Score base grade, the external rating floor, major red-flag notches (at most 3) and the default flag. Policy section 10.2."
+    inputs:
+      - slot: financial_strength_score
+        description: "Financial Strength Score computed under policy section 10.1"
+        unit: "points"
+        scale: 1
+      - slot: external_rating_index
+        description: "Bank numeric index of the latest long-term external rating: AAA=1, AA+=2, ... BBB-=10, BB+=11, ... D=22"
+        unit: "index"
+        scale: 1
+        definition: "Index of the latest long-term external rating grade in the policy section 5 table; short-term ratings are ignored."
+        mapping:
+          "AAA": 1
+          "AA+": 2
+          "AA": 3
+          "AA-": 4
+          "A+": 5
+          "A": 6
+          "A-": 7
+          "BBB+": 8
+          "BBB": 9
+          "BBB-": 10
+          "BB+": 11
+          "BB": 12
+          "BB-": 13
+          "B+": 14
+          "B": 15
+          "B-": 16
+          "C": 17
+          "D": 22
+      - slot: major_red_flag_count
+        description: "Number of major red flags present under policy section 6"
+        unit: "count"
+        scale: 1
+        judge:
+          answer: count
+          rubric_headings: ["Red flags"]
+          keywords: ["default", "NPA", "SMA", "overdue", "qualified", "qualification", "adverse opinion", "disclaimer", "going concern", "auditor resign", "resignation", "fraud", "forensic", "wilful", "Form 483", "OAI", "warning letter", "litigation", "regulatory proceeding", "pledge", "related-party", "related party", "promoter loan"]
+      - slot: default_flag
+        description: "1 if any NPA, wilful default or one-time settlement in the last 36 months, else 0"
+        unit: "flag"
+        scale: 1
+        judge:
+          answer: flag
+          rubric_headings: ["Red flags", "Negative and caution list"]
+          keywords: ["default", "NPA", "non-performing", "SMA", "overdue", "wilful", "one-time settlement", "OTS", "IBC", "insolvency", "fraud"]
+    lean_function: internal_risk_grade
+    grades:
+      - label: "Low risk"
+        condition_text: "grade between 1 and 3 inclusive"
+      - label: "Acceptable risk"
+        condition_text: "grade 4 or 5"
+      - label: "High risk"
+        condition_text: "grade 6 or 7"
+      - label: "Decline"
+        condition_text: "grade 8"
+  - score_id: maximum_exposure
+    name: "Maximum Exposure test"
+    description: "Maximum permissible aggregate bank exposure: the smaller of the turnover cap (P% of 20% of projected turnover, the projection counting for at most 125% of the latest audited turnover) and the net-worth cap (P% of tangible net worth), P set by the Internal Risk Grade; the grade compares the proposed exposure with it. Policy section 10.3."
+    unit: "crore"
+    value_scale: 100
+    value_meaning: "The maximum permissible exposure in INR crore (the limit itself, not a pass/fail flag). Compare it with the proposed exposure; 0 means no exposure is permitted."
+    inputs:
+      - slot: proposed_exposure
+        description: "Proposed aggregate bank exposure including existing limits"
+        unit: "INR crore x 100"
+        scale: 100
+        run_parameter: proposed_exposure
+      - slot: projected_turnover
+        description: "Projected annual turnover for the next financial year"
+        unit: "INR crore x 100"
+        scale: 100
+        run_parameter: projected_turnover
+        fallback_slot: revenue_current
+        fallback_note: "projection not provided; latest revenue used"
+      - slot: revenue_current
+        description: "Revenue from operations, latest audited year (the audited turnover; projected turnover counts for at most 125% of it, policy section 7)"
+        unit: "INR crore x 100"
+        scale: 100
+      - slot: tangible_net_worth
+        description: "Tangible net worth at year end"
+        unit: "INR crore x 100"
+        scale: 100
+        definition: "Shareholders' equity (net worth) minus intangible assets (goodwill, other intangibles and intangibles under development) at the latest audited year end (policy section 2)."
+        derive_from: ["total_equity", "intangible assets"]
+      - slot: internal_risk_grade
+        description: "Internal Risk Grade computed under policy section 10.2"
+        unit: "grade"
+        scale: 1
+    lean_function: maximum_exposure_test
+    grades:
+      - label: "Within limit"
+        condition_text: "proposed exposure is at or below the maximum permissible exposure (500 x proposed <= P x the smaller of projected turnover and 125% of the latest audited turnover, and 100 x proposed <= P x tangible net worth, where P is 100 for grades 1-2, 75 for 3-4, 50 for 5, 25 for 6, 0 for 7-8)"
+      - label: "Exceeds limit"
+        condition_text: "proposed exposure is above the maximum permissible exposure"
+
+# Sanity rules over bound slot values, checked after binding and before Lean generation.
+# Violations never block a score; they are shown as warnings next to it in the report.
+invariants:
+  - name: net_debt_within_total_debt
+    expression: "net_debt <= total_debt"
+    message: "Net debt cannot exceed total debt; one of the two bindings uses a different period, scope or definition."
+  - name: total_debt_non_negative
+    expression: "total_debt >= 0"
+    message: "Total debt cannot be negative."
+  - name: ebitda_non_zero
+    expression: "ebitda != 0"
+    message: "EBITDA of zero makes the net debt/EBITDA test meaningless; check the EBITDA binding."
+  - name: current_assets_positive
+    expression: "current_assets > 0"
+    message: "Current assets must be positive."
+  - name: current_liabilities_positive
+    expression: "current_liabilities > 0"
+    message: "Current liabilities must be positive."
+  - name: tangible_net_worth_within_equity
+    expression: "tangible_net_worth <= total_equity"
+    message: "Tangible net worth cannot exceed total equity."
+  - name: cfads_within_ebitda
+    expression: "cfads <= ebitda"
+    message: "CFADS (EBITDA less cash taxes) cannot exceed EBITDA."
+  - name: debt_service_covers_interest
+    expression: "debt_service >= interest_expense"
+    message: "Debt service (interest plus principal) cannot be below interest expense."
+
+# Hard policy rules over bound slot values and score ids, evaluated by Lean in the per-run
+# Scores.lean (every comparison is cross-multiplied; `and` / `or` join comparisons).
+# `expression` must hold; when it does not, `outcome` is the minimum decision the rule forces
+# (decline | refer), `caution` marks the rule as only a condition on the approval (approve with
+# conditions), and
+# `pass_required` must hold for a plain approval (a failure caps the decision at approve with
+# conditions, as when the exposure is reduced to the maximum). `caution_expression` is true
+# inside the caution zone of a rule that otherwise holds. `policy_section` is the number of the
+# policy.md section.
+rules:
+  - rule_id: net_debt_to_ebitda_max
+    name: "Net debt / EBITDA at most 4.5x"
+    expression: "ebitda > 0 and 2 * net_debt <= 9 * ebitda"
+    caution_expression: "2 * net_debt > 7 * ebitda"
+    outcome: refer
+    policy_section: "4"
+    message: "Net debt / EBITDA exceeds the 4.5x minimum standard (or EBITDA is not positive); caution zone is above 3.5x."
+    measure: "Net debt / EBITDA"
+    measure_numerator: "net_debt"
+    measure_denominator: "ebitda"
+    measure_unit: "x"
+    limit_text: "at most 4.5x"
+  - rule_id: interest_coverage_min
+    name: "Interest coverage at least 2.5x"
+    expression: "ebitda > 0 and 2 * ebitda >= 5 * interest_expense"
+    caution_expression: "ebitda < 4 * interest_expense"
+    outcome: refer
+    policy_section: "4"
+    message: "Interest coverage (EBITDA / interest) is below the 2.5x minimum standard (or EBITDA is not positive); caution zone is below 4.0x."
+    measure: "Interest coverage (EBITDA / interest)"
+    measure_numerator: "ebitda"
+    measure_denominator: "interest_expense"
+    measure_unit: "x"
+    limit_text: "at least 2.5x"
+  - rule_id: dscr_min
+    name: "DSCR at least 1.25x"
+    expression: "debt_service <= 0 or 100 * cfads >= 125 * debt_service"
+    caution_expression: "debt_service > 0 and 100 * cfads < 150 * debt_service"
+    outcome: refer
+    policy_section: "4"
+    message: "DSCR (CFADS / debt service) is below the 1.25x minimum standard; caution zone is below 1.50x."
+    measure: "DSCR (CFADS / debt service)"
+    measure_numerator: "cfads"
+    measure_denominator: "debt_service"
+    measure_unit: "x"
+    limit_text: "at least 1.25x"
+  - rule_id: current_ratio_min
+    name: "Current ratio at least 1.10x"
+    expression: "100 * current_assets >= 110 * current_liabilities"
+    caution_expression: "100 * current_assets < 133 * current_liabilities"
+    outcome: refer
+    policy_section: "4"
+    message: "Current ratio is below the 1.10x minimum standard; caution zone is below 1.33x."
+    measure: "Current ratio"
+    measure_numerator: "current_assets"
+    measure_denominator: "current_liabilities"
+    measure_unit: "x"
+    limit_text: "at least 1.10x"
+  - rule_id: debt_to_equity_max
+    name: "Total debt / equity at most 3.0x"
+    expression: "total_equity > 0 and total_debt <= 3 * total_equity"
+    caution_expression: "total_debt > 2 * total_equity"
+    outcome: refer
+    policy_section: "4"
+    message: "Total debt / equity exceeds the 3.0x minimum standard (or equity is not positive); caution zone is above 2.0x."
+    measure: "Total debt / equity"
+    measure_numerator: "total_debt"
+    measure_denominator: "total_equity"
+    measure_unit: "x"
+    limit_text: "at most 3.0x"
+  - rule_id: revenue_trend_min
+    name: "Revenue trend not below -10%"
+    expression: "revenue_previous > 0 and 10 * revenue_current >= 9 * revenue_previous"
+    caution_expression: "revenue_current < revenue_previous"
+    outcome: refer
+    policy_section: "4"
+    message: "Year-on-year revenue fell by more than 10%, below the minimum standard; caution zone is any decline."
+    measure: "Revenue trend (year on year)"
+    measure_numerator: "revenue_current - revenue_previous"
+    measure_denominator: "revenue_previous"
+    measure_unit: "%"
+    limit_text: "not below -10%"
+  - rule_id: tangible_net_worth_positive
+    name: "Tangible net worth positive"
+    expression: "tangible_net_worth > 0"
+    outcome: decline
+    policy_section: "2"
+    message: "Tangible net worth is not positive, so the borrower is ineligible under the eligibility rules."
+  - rule_id: external_rating_min
+    name: "External rating at least BBB-"
+    expression: "external_rating_index <= 10"
+    outcome: decline
+    policy_section: "5"
+    message: "The external rating is below BBB- (index above 10), which is not acceptable (the secured SME exception below INR 25 crore needs a manual decision)."
+  - rule_id: default_flag_clear
+    name: "No default flag"
+    expression: "default_flag <= 0"
+    outcome: decline
+    policy_section: "6"
+    message: "A default flag is raised (NPA, wilful default or one-time settlement in the last 36 months), which forces the Internal Risk Grade to 8 and a decline."
+  - rule_id: major_red_flags_below_two
+    name: "Fewer than two major red flags"
+    expression: "major_red_flag_count <= 1"
+    outcome: refer
+    policy_section: "6"
+    message: "Two or more major red flags are present, which is a mandatory referral to the credit committee."
+  - rule_id: no_major_red_flag
+    name: "No major red flag"
+    expression: "major_red_flag_count <= 0"
+    outcome: caution
+    policy_section: "11"
+    message: "One major red flag is present, which allows approval only with conditions."
+  - rule_id: exposure_within_cap
+    name: "Proposed exposure within the maximum exposure"
+    expression: "proposed_exposure <= maximum_exposure"
+    outcome: pass_required
+    policy_section: "10.3"
+    message: "The proposed exposure is above the maximum permissible exposure; it must be reduced to the maximum exposure."
+  - rule_id: irg_not_decline
+    name: "Internal Risk Grade 1 to 7"
+    expression: "internal_risk_grade <= 7"
+    outcome: decline
+    policy_section: "11"
+    message: "Internal Risk Grade is 8, which the decision rules decline."
+  - rule_id: irg_not_committee_only
+    name: "Internal Risk Grade 1 to 5"
+    expression: "internal_risk_grade <= 5"
+    outcome: refer
+    policy_section: "11"
+    message: "Internal Risk Grade is 6 or 7 (high risk), which the decision rules refer to the credit committee."
+  - rule_id: irg_low_risk
+    name: "Internal Risk Grade 1 to 3"
+    expression: "internal_risk_grade <= 3"
+    outcome: caution
+    policy_section: "11"
+    message: "Internal Risk Grade is 4 or 5 (acceptable risk), which allows approval only with conditions."

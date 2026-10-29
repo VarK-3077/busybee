@@ -1,0 +1,57 @@
+[
+  {
+    "doc_id": "D1",
+    "title": "Indoco Remedies Annual Report 2025-26 (79th)",
+    "kind": "annual_report",
+    "source_path": "/home/ubuntu/aegis26/data/companies/indoco_remedies/annual_report_fy2025_26.pdf",
+    "sha256": "a358843e20da7d310785fe59cb4e3478f98ace50e95b4fd4eba78cf44c4bb8ab",
+    "num_pages": 349,
+    "metadata": {
+      "filename": "annual_report_fy2025_26.pdf"
+    }
+  },
+  {
+    "doc_id": "D2",
+    "title": "ICRA rating rationale, 24 Sep 2025 (reaffirmed, enhanced amount)",
+    "kind": "rating_rationale",
+    "source_path": "/home/ubuntu/aegis26/data/companies/indoco_remedies/icra_rationale_2025-09-24.pdf",
+    "sha256": "873197f73334b604d80fb9ba1331969d80a03a1410dba7c8e38a56c39dbea779",
+    "num_pages": 9,
+    "metadata": {
+      "filename": "icra_rationale_2025-09-24.pdf"
+    }
+  },
+  {
+    "doc_id": "D3",
+    "title": "ICRA rating rationale, 30 Sep 2026 (ratings reaffirmed)",
+    "kind": "rating_rationale",
+    "source_path": "/home/ubuntu/aegis26/data/companies/indoco_remedies/icra_rationale_2026-09-30.pdf",
+    "sha256": "6466c2d18d9c417a122c5b94e7cb2eef6876a316b4faccb475f2a59d8e641348",
+    "num_pages": 9,
+    "metadata": {
+      "filename": "icra_rationale_2026-09-30.pdf"
+    }
+  },
+  {
+    "doc_id": "D4",
+    "title": "Indoco Remedies (NSE:INDOCO): What Did Management Reveal in Q1 FY27 Earnings Call?",
+    "kind": "news",
+    "source_path": "/home/ubuntu/aegis26/data/companies/indoco_remedies/news_q1fy27_earnings_call.md",
+    "sha256": "9c8139456bfc02c49480d02fca4605f31a835b81a24f994803a4105bb191aca1",
+    "num_pages": 1,
+    "metadata": {
+      "filename": "news_q1fy27_earnings_call.md"
+    }
+  },
+  {
+    "doc_id": "D5",
+    "title": "Indoco Remedies' Goa Sterile Plant Gets 7 USFDA Form 483 Observations",
+    "kind": "news",
+    "source_path": "/home/ubuntu/aegis26/data/companies/indoco_remedies/news_usfda_form483_goa.md",
+    "sha256": "43e51ebe912b6eafd5eb4c69b3ea2b7a1ecb933385bb0fca9bf830287d18a13a",
+    "num_pages": 1,
+    "metadata": {
+      "filename": "news_usfda_form483_goa.md"
+    }
+  }
+]

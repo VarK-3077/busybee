@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference I001</title>
+  <link rel="stylesheet" href="../assets/tokens.css">
+  <link rel="stylesheet" href="../assets/document.css">
+  <link rel="stylesheet" href="../assets/components.css">
+  <script src="../assets/components.js" defer></script>
+</head>
+<body class="bb-desk">
+<main class="bb-page">
+  <header class="bb-doc-header">
+    <p class="bb-doc-kicker"><span>Lean artifact · indoco-v11:I001</span><span>Inference</span></p>
+    <h1 class="bb-doc-title">Inference I001</h1>
+    <p class="bb-doc-subtitle"><a href="indoco-v11-I001.lean">lean/indoco-v11-I001.lean</a></p>
+    <dl class="bb-meta">
+      <div><dt>SHA-256</dt><dd class="bb-mono">546a6732e800…</dd></div>
+      <div><dt>Theorems</dt><dd>1</dd></div>
+      <div><dt>Status</dt><dd>Proved</dd></div>
+    </dl>
+    <p class="bb-source-actions"><a class="bb-jump" href="../index.html">Back to the report ↖</a></p>
+  </header>
+
+  <section class="bb-lean" id="lean-indoco-v11-I001" aria-label="Lean artifact indoco-v11:I001">
+    <div class="bb-lean-head">
+      <span class="bb-lean-title">Inference I001</span>
+      <span class="bb-lean-file">lean/indoco-v11-I001.lean</span>
+      <span class="bb-lean-hash">sha256 546a6732e800…</span>
+      <span class="bb-badge" data-status="proved">Proved</span>
+    </div>
+    <pre class="bb-code bb-code--lines"><code><span class="bb-line">import BusyBee.Common</span><span class="bb-line"></span><span class="bb-line">/-!</span><span class="bb-line">Generated Lean check for inference I001. Every number is scaled by x10 (money in crore, percent in percent).</span><span class="bb-line">-/</span><span class="bb-line"></span><span class="bb-line">namespace BusyBee.Inference.I001</span><span class="bb-line"></span><span class="bb-line">-- scale: x10</span><span class="bb-line"></span><span class="bb-line">-- SECTION: Scaled facts</span><span class="bb-line"></span><span class="bb-line">/-- Consolidated net debt to equity ratio was 113.4% as at March 31, 2026 (March 31, 2025: 95.9%). -/</span><span class="bb-line">def net_debt_equity : Int := 1134 -- F145 D1:p326:c0</span><span class="bb-line"></span><span class="bb-line">/-- The group&#39;s net debt to equity ratio was 113.4% as at March 31, 2026, exceeding the group&#39;s strategy to maintain a gearing ratio within 50%. -/</span><span class="bb-line">def gearing_target : Int := 500 -- F141 D1:p326:c0</span><span class="bb-line"></span><span class="bb-line">-- SECTION: Claim</span><span class="bb-line"></span><span class="bb-line">/-- Quantified claim for inference I001 (all values scaled x10): The consolidated group is in a severe financial distress position, with a net loss that widened significantly year-on-year and a net debt-to-equity ratio that has breached the company&#39;s own 50% gearing strategy. -/</span><span class="bb-line">theorem claim : net_debt_equity &gt; gearing_target := by</span><span class="bb-line">  decide</span><span class="bb-line"></span><span class="bb-line">end BusyBee.Inference.I001</span></code></pre>
+    <div class="bb-compile" data-ok="true">
+      <div class="bb-compile-head">Compiled without errors · 0.27 s · Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)</div>
+      <pre>(no messages)</pre>
+    </div>
+  </section>
+
+  <section class="bb-section" id="lean-explanation">
+    <h2 class="bb-h2">In plain English</h2>
+    <div class="bb-explain"><section class="bb-explain-section"><h3 class="bb-h3">Scaled facts</h3><div class="bb-explain-cols bb-caps"><span>Lean</span><span>In English</span></div><div class="bb-explain-item" id="explain-net_debt_equity"><div class="bb-explain-name">net_debt_equity <span class="bb-explain-kind">def</span></div><pre class="bb-explain-lean">def net_debt_equity : Int := 1134 -- F145 D1:p326:c0</pre><div class="bb-explain-english"><p class="bb-explain-doc">Consolidated net debt to equity ratio was 113.4% as at March 31, 2026 (March 31, 2025: 95.9%).</p><p class="bb-explain-mech">net debt equity is defined as 1134 (scaled), from fact F145 (D1:p326:c0)</p></div></div><div class="bb-explain-item" id="explain-gearing_target"><div class="bb-explain-name">gearing_target <span class="bb-explain-kind">def</span></div><pre class="bb-explain-lean">def gearing_target : Int := 500 -- F141 D1:p326:c0</pre><div class="bb-explain-english"><p class="bb-explain-doc">The group&#39;s net debt to equity ratio was 113.4% as at March 31, 2026, exceeding the group&#39;s strategy to maintain a gearing ratio within 50%.</p><p class="bb-explain-mech">gearing target is defined as 500 (scaled), from fact F141 (D1:p326:c0)</p></div></div></section><section class="bb-explain-section"><h3 class="bb-h3">Claim</h3><div class="bb-explain-cols bb-caps"><span>Lean</span><span>In English</span></div><div class="bb-explain-item" id="explain-claim"><div class="bb-explain-name">claim <span class="bb-explain-kind">theorem</span></div><pre class="bb-explain-lean">theorem claim : net_debt_equity &gt; gearing_target := by
+  decide</pre><div class="bb-explain-english"><p class="bb-explain-doc">Quantified claim for inference I001 (all values scaled x10): The consolidated group is in a severe financial distress position, with a net loss that widened significantly year-on-year and a net debt-to-equity ratio that has breached the company&#39;s own 50% gearing strategy.</p><p class="bb-explain-mech">claim: net debt equity is greater than gearing target</p></div></div></section></div>
+  </section>
+</main>
+</body>
+</html>

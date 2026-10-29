@@ -1,0 +1,277 @@
+{
+  "company": "Acme Textiles Limited",
+  "slug": "acme_textiles",
+  "material_facts": [
+    {
+      "statement": "Revenue from operations was Rs 931.2 crore in FY25, up 10.1% from Rs 845.5 crore in FY24.",
+      "category": "revenue",
+      "doc_hint": "annual_report.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Revenue was Rs 742.0 crore in FY23 and grew 13.9% in FY24.",
+      "category": "revenue",
+      "doc_hint": "annual_report.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Exports contributed 34% of FY25 revenue, up from 31% in FY24.",
+      "category": "revenue",
+      "doc_hint": "annual_report.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "The top five customers accounted for 41% of FY25 revenue; the largest single customer 14%.",
+      "category": "industry_market",
+      "doc_hint": "annual_report.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "EBITDA was Rs 130.4 crore in FY25, a margin of 14.0% (FY24: Rs 120.9 crore, 14.3%).",
+      "category": "profitability",
+      "doc_hint": "annual_report.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Profit after tax was Rs 38.5 crore in FY25 against Rs 37.1 crore in FY24 and Rs 29.5 crore in FY23.",
+      "category": "profitability",
+      "doc_hint": "annual_report.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Finance costs rose to Rs 38.6 crore in FY25 from Rs 34.9 crore in FY24.",
+      "category": "debt_leverage",
+      "doc_hint": "financial_statements.pdf",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Total borrowings were Rs 382.0 crore at 31 March 2025 (Rs 351.0 crore a year earlier).",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Net debt was Rs 352.0 crore at March 2025, equal to 2.7 times EBITDA.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Net worth was Rs 300.0 crore and total debt to equity was 1.27 times at March 2025.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Interest coverage (EBITDA to finance costs) was 3.4 times in FY25.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "The debt service coverage ratio was 1.78 times in FY25.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "The current ratio was 1.27 times, with current assets Rs 413.0 crore and current liabilities Rs 324.0 crore.",
+      "category": "liquidity",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Cash and bank balances were Rs 21.4 crore and liquid investments Rs 8.6 crore at March 2025.",
+      "category": "liquidity",
+      "doc_hint": "financial_statements.pdf",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Cash flow from operations was Rs 70.4 crore in FY25 after a working-capital build-up of Rs 48.0 crore.",
+      "category": "cash_flow",
+      "doc_hint": "financial_statements.pdf",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Capital expenditure was Rs 62.0 crore in FY25, leaving free cash flow of about Rs 8.4 crore.",
+      "category": "cash_flow",
+      "doc_hint": "rating_rationale.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "The board approved a Rs 120 crore capex programme for FY26-27 to add 60,000 spindles, funded by a Rs 78 crore term loan and Rs 42 crore internal accruals.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Management expects net debt to EBITDA to peak at about 3.0 times in FY27.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "Meridian Ratings reaffirmed Acme's long-term rating at MR A+ with Stable outlook and short-term rating MR A1 on Rs 432.0 crore of bank facilities (12 June 2025).",
+      "category": "ratings",
+      "doc_hint": "rating_rationale.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Rating downside triggers include net debt to EBITDA above 3.5 times, interest coverage below 2.5 times and promoter pledge above 25%.",
+      "category": "ratings",
+      "doc_hint": "rating_rationale.md",
+      "page_hint": 2,
+      "must_have": true
+    },
+    {
+      "statement": "Promoters held 58.4% of equity, of which 12.0% of their holding was pledged.",
+      "category": "ownership_governance",
+      "doc_hint": "annual_report.md",
+      "page_hint": 3,
+      "must_have": true
+    },
+    {
+      "statement": "The statutory auditors issued an unmodified opinion with an Emphasis of Matter on an unprovided GST demand of Rs 14.2 crore.",
+      "category": "litigation_regulatory",
+      "doc_hint": "annual_report.md",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Contingent liabilities not provided for totalled Rs 21.6 crore at March 2025.",
+      "category": "litigation_regulatory",
+      "doc_hint": "annual_report.md",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "There were no defaults in repayment of loans or interest during the year.",
+      "category": "credit_history",
+      "doc_hint": "annual_report.md",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Average utilisation of fund-based working-capital limits (Rs 190.0 crore) was 84%, peaking at 97% in October 2024.",
+      "category": "liquidity",
+      "doc_hint": "bank_statement_summary.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Two instances of overdrawing beyond the limit for more than 5 days occurred in October and November 2024; no cheque returns.",
+      "category": "credit_history",
+      "doc_hint": "bank_statement_summary.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "All financial covenants were complied with in FY25, including net debt/EBITDA 2.7 times against a 3.5 times cap.",
+      "category": "debt_leverage",
+      "doc_hint": "covenant_sheet.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Lenders consented to the Rs 120 crore expansion subject to net debt/EBITDA staying at or below 3.5 times.",
+      "category": "debt_leverage",
+      "doc_hint": "covenant_sheet.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Key risks include cotton price volatility, customer concentration, working-capital intensity and expansion execution.",
+      "category": "industry_market",
+      "doc_hint": "annual_report.md",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Q1 FY26 revenue was Rs 238.4 crore, up 9% year on year, with operating margin of 13.6%.",
+      "category": "news",
+      "doc_hint": "news_2.md",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Gross finance costs for FY25 were Rs 38.6 crore and debt service was Rs 66.6 crore (interest Rs 38.6 crore plus scheduled principal Rs 28.0 crore).",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 5,
+      "must_have": false
+    },
+    {
+      "statement": "CFADS in FY25 was Rs 118.5 crore: EBITDA of Rs 130.4 crore less cash taxes paid of Rs 11.9 crore.",
+      "category": "cash_flow",
+      "doc_hint": "annual_report.md",
+      "page_hint": 5,
+      "must_have": false
+    },
+    {
+      "statement": "Net worth was Rs 300.0 crore, current assets Rs 413.0 crore and current liabilities Rs 324.0 crore at 31 March 2025.",
+      "category": "liquidity",
+      "doc_hint": "annual_report.md",
+      "page_hint": 6,
+      "must_have": false
+    },
+    {
+      "statement": "Tangible net worth was Rs 292.4 crore at 31 March 2025 and FY26 turnover is projected at Rs 1,024.3 crore.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report.md",
+      "page_hint": 7,
+      "must_have": false
+    },
+    {
+      "statement": "Lead bank screening: external rating index 5 (MR A+), major red flag count 0, default flag 0.",
+      "category": "ratings",
+      "doc_hint": "covenant_sheet.md",
+      "page_hint": 2,
+      "must_have": false
+    }
+  ],
+  "planted_errors": [
+    {
+      "statement": "Acme Textiles closed FY25 with revenue of Rs 1,018 crore.",
+      "why_wrong": "Annual report and financial statements show FY25 revenue of Rs 931.2 crore; the news item in news_2.md is wrong."
+    },
+    {
+      "statement": "The statutory auditors issued a qualified opinion on the FY25 financial statements.",
+      "why_wrong": "The opinion was unmodified, with only an Emphasis of Matter paragraph on the GST dispute."
+    },
+    {
+      "statement": "Net debt to EBITDA was 1.9 times at March 2025.",
+      "why_wrong": "Net debt of Rs 352.0 crore over EBITDA of Rs 130.4 crore is 2.7 times."
+    },
+    {
+      "statement": "Acme's long-term rating is MR AA with a Positive outlook.",
+      "why_wrong": "The rating is MR A+ with a Stable outlook."
+    },
+    {
+      "statement": "Promoters have pledged 35% of their holding.",
+      "why_wrong": "The pledge is 12.0% of promoter holding."
+    },
+    {
+      "statement": "Total borrowings were Rs 282 crore at 31 March 2025.",
+      "why_wrong": "Total borrowings were Rs 382.0 crore."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="bb-page bb-source">
+  <header class="bb-doc-header">
+    <p class="bb-doc-kicker"><span>Source document · {{ document.doc_id }}</span><span>BusyBee evidence bundle</span></p>
+    <h1 class="bb-doc-title">{{ document.title }}</h1>
+    <dl class="bb-meta">
+      <div><dt>Kind</dt><dd>{{ document.kind.value }}</dd></div>
+      <div><dt>Pages</dt><dd>{{ document.num_pages }}</dd></div>
+      <div><dt>File</dt><dd class="bb-mono">{{ original_name }}</dd></div>
+      {% if short_hash %}<div><dt>SHA-256</dt><dd class="bb-mono">{{ short_hash }}</dd></div>{% endif %}
+    </dl>
+    {% if pdf_available %}<p class="bb-source-actions"><a href="{{ pdf_href(first_page) }}">Open original PDF ↗</a></p>{% endif %}
+  </header>
+
+  {% for page in pages %}
+  <section class="bb-src-page" id="{{ document.doc_id }}:p{{ page.page_no }}" aria-label="Page {{ page.page_no }}">
+    <h2 class="bb-src-page-head"><span>Page {{ page.page_no }}</span>{% if pdf_available %}<a href="{{ pdf_href(page.page_no) }}">Open in PDF ↗</a>{% endif %}</h2>
+    {% for chunk in page.chunks %}
+    <section class="bb-chunk" id="{{ chunk.chunk_id }}">
+      <a class="bb-chunk-id" href="#{{ chunk.chunk_id }}">c{{ chunk.index_in_page }}</a>
+      <p>{{ chunk.text }}</p>
+    </section>
+    {% endfor %}
+  </section>
+  {% else %}
+  <p class="bb-small bb-muted">No indexed text is available for this document.</p>
+  {% endfor %}
+</main>
+{% endblock %}

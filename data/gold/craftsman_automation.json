@@ -1,0 +1,210 @@
+{
+  "company": "Craftsman Automation Limited",
+  "slug": "craftsman_automation",
+  "material_facts": [
+    {
+      "statement": "CRISIL reaffirmed Craftsman Automation at Crisil AA-/Stable for long-term and Crisil A1+ short-term on bank facilities enhanced to Rs 3,950 crore from Rs 2,300 crore (12 December 2025).",
+      "category": "ratings",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated operating revenue was Rs 3,786 crore in H1 FY2026 against Rs 2,365 crore a year earlier.",
+      "category": "revenue",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated revenue grew 28% to Rs 5,693 crore in fiscal 2025 from Rs 4,452 crore; the aluminium segment grew about 41%.",
+      "category": "revenue",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Aluminium contributed over 60% of H1 FY2026 revenue, powertrain 27% and industrial and engineering 13%.",
+      "category": "revenue",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated operating margin fell to 14.9% in fiscal 2025 from about 20% earlier, owing to consolidation of Sunbeam and lower standalone margins.",
+      "category": "profitability",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Operating margin was about 15% in H1 FY2026 versus 16.5% a year earlier; CRISIL expects about 15% for the year.",
+      "category": "profitability",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Gearing was about 0.78 times at 31 March 2025 against 0.91 times a year earlier.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Interest cover was 3.97 times and debt to EBITDA 2.53 times in fiscal 2025 versus 5.79 times and 1.70 times in fiscal 2023.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Debt was Rs 2,141 crore at 31 March 2025 and Rs 3,038 crore at 30 September 2025, expected near Rs 3,500 crore by March 2026.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Debt to EBITDA is expected at about 2.8 to 2.9 times in fiscal 2026 and below 2.5 times thereafter.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Capex of about Rs 1,200 crore is planned in fiscal 2026 for Sunbeam modernisation, phase II expansions and greenfield facilities.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "The company raised Rs 1,200 crore through a QIP in June 2024 (net Rs 1,176.7 crore), repaying over Rs 650 crore of debt and buying the residual 24% of DR Axion for Rs 250 crore.",
+      "category": "debt_leverage",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "CRISIL rates subsidiary Sunbeam Lightweighting at BBB-/Positive/A3 and DR Axion at AA-/Stable/A1+.",
+      "category": "ratings",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Gross current assets average 160 to 170 days, with inventory of close to 4 months and receivables near 2 months.",
+      "category": "liquidity",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Liquidity is strong: annual accruals of about Rs 760 crore this fiscal against repayments of about Rs 180 crore, and average utilisation of the Rs 1,010 crore standalone bank limit was about 56%.",
+      "category": "liquidity",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "The auto segment will account for over 85% of revenues, making performance vulnerable to an auto sector slowdown.",
+      "category": "industry_market",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Board is 67% independent directors and 33% women.",
+      "category": "ownership_governance",
+      "doc_hint": "crisil_rationale_2025-12-12.html",
+      "page_hint": 1,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated operating revenue was Rs 8,069.27 crore in FY2026 against Rs 5,690.48 crore in FY2025.",
+      "category": "revenue",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Standalone operating revenue was Rs 4,818.08 crore in FY2026 against Rs 3,847.95 crore.",
+      "category": "revenue",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated EBITDA was Rs 1,300.07 crore in FY2026 against Rs 858.78 crore in FY2025.",
+      "category": "profitability",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated finance cost was Rs 308.97 crore against Rs 216.64 crore; depreciation Rs 443.85 crore against Rs 347.02 crore.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated profit before tax was Rs 534.3 crore and profit after tax Rs 383.99 crore in FY2026 (FY2025: Rs 269.65 crore and Rs 200.87 crore).",
+      "category": "profitability",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Standalone profit after tax was Rs 221.47 crore in FY2026 against Rs 93.69 crore.",
+      "category": "profitability",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Consolidated other equity closed at Rs 3,252.13 crore at 31 March 2026.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "Dividend paid in the year was Rs 11.93 crore against Rs 23.77 crore the previous year.",
+      "category": "stock",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    },
+    {
+      "statement": "The board proposed a final dividend of Rs 11.25 per share of Rs 5 face value, a total of about Rs 26.84 crore.",
+      "category": "stock",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 139,
+      "must_have": true
+    },
+    {
+      "statement": "Standalone long-term borrowings (including current portion) were Rs 2,202.75 crore at 31 March 2026 against Rs 1,509.56 crore a year earlier.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 139,
+      "must_have": true
+    },
+    {
+      "statement": "Standalone secured rupee term loans from banks stood at Rs 1,869.35 crore non-current and Rs 154.77 crore current at March 2026.",
+      "category": "debt_leverage",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 139,
+      "must_have": true
+    },
+    {
+      "statement": "This is the 40th annual report of the company, for the year ended 31 March 2026.",
+      "category": "other",
+      "doc_hint": "annual_report_fy2025_26.pdf",
+      "page_hint": 4,
+      "must_have": true
+    }
+  ],
+  "planted_errors": []
+}

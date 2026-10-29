@@ -1,0 +1,133 @@
+[
+  {
+    "inference_id": "I001",
+    "opinion": "The consolidated group is in a severe financial distress position, with a net loss that widened significantly year-on-year and a net debt-to-equity ratio that has breached the company's own 50% gearing strategy.",
+    "fact_ids": [
+      "F013",
+      "F145",
+      "F141"
+    ],
+    "reasoning": "The consolidated net loss after tax widened to INR 98.67 crore in FY2026 from INR 77.95 crore in FY2025, indicating deteriorating bottom-line performance. The company-reported consolidated net debt to equity ratio stands at 113.4% as of March 31, 2026, which is more than double the company's stated strategy to maintain a gearing ratio within 50%. This combination of widening losses and excessive leverage signals a high risk of financial instability. [Independent check: The claim that the net debt to equity ratio (113.4%) is 'more than double' the strategy limit (50%) is mathematically incorrect; 113.4% is less than double 50% (which would be 100%).; The conclusion that the combination of factors 'signals a high risk of financial instability' is a subjective assessment not explicitly supported by the listed facts, which only provide the data points and the deviation from strategy.]",
+    "confidence": 0.2,
+    "quantitative": true,
+    "lean": {
+      "artifact_id": "indoco-v11:I001",
+      "kind": "inference",
+      "file_path": "/home/ubuntu/aegis26/workspace/indoco-v11/lean/Inference_I001.lean",
+      "source": "import BusyBee.Common\n\n/-!\nGenerated Lean check for inference I001. Every number is scaled by x10 (money in crore, percent in percent).\n-/\n\nnamespace BusyBee.Inference.I001\n\n-- scale: x10\n\n-- SECTION: Scaled facts\n\n/-- Consolidated net debt to equity ratio was 113.4% as at March 31, 2026 (March 31, 2025: 95.9%). -/\ndef net_debt_equity : Int := 1134 -- F145 D1:p326:c0\n\n/-- The group's net debt to equity ratio was 113.4% as at March 31, 2026, exceeding the group's strategy to maintain a gearing ratio within 50%. -/\ndef gearing_target : Int := 500 -- F141 D1:p326:c0\n\n-- SECTION: Claim\n\n/-- Quantified claim for inference I001 (all values scaled x10): The consolidated group is in a severe financial distress position, with a net loss that widened significantly year-on-year and a net debt-to-equity ratio that has breached the company's own 50% gearing strategy. -/\ntheorem claim : net_debt_equity > gearing_target := by\n  decide\n\nend BusyBee.Inference.I001\n",
+      "sha256": "546a6732e8003ab058243b17b56c06a189279ee1e18e00e1df02ba428df9ea49",
+      "theorems": [
+        "claim"
+      ],
+      "compile": {
+        "ok": true,
+        "stdout": "",
+        "stderr": "",
+        "duration_s": 0.27267938400018465,
+        "toolchain": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "errors": []
+      }
+    }
+  },
+  {
+    "inference_id": "I002",
+    "opinion": "Repayment capacity is critically weak, as evidenced by a company-reported DSCR of 0.7 times and an interest coverage ratio of 1.2 times, both of which are below the minimum threshold of 1.0 times required for adequate debt service.",
+    "fact_ids": [
+      "F228",
+      "F227"
+    ],
+    "reasoning": "The company-reported DSCR for FY2026 is 0.7 times, meaning the company's cash flow from operations is insufficient to cover its debt service obligations. Additionally, the company-reported interest coverage ratio is 1.2 times, which is barely above the break-even point and leaves no buffer for interest rate fluctuations or earnings volatility. These metrics indicate a high probability of default if cash flows do not improve significantly. [Independent check: The reasoning claims the metrics indicate a 'high probability of default', which is a causal claim and risk assessment not supported by the listed facts that only state the ratios are weak.; The reasoning states the interest coverage ratio is 'barely above the break-even point', which is an interpretation not explicitly stated in the facts (which only say it is 'weak').; The reasoning asserts there is 'no buffer for interest rate fluctuations or earnings volatility', which is an assumption about market conditions and future volatility not present in the listed facts.]",
+    "confidence": 0.2,
+    "quantitative": true,
+    "lean": {
+      "artifact_id": "indoco-v11:I002",
+      "kind": "inference",
+      "file_path": "/home/ubuntu/aegis26/workspace/indoco-v11/lean/Inference_I002.lean",
+      "source": "import BusyBee.Common\n\n/-!\nGenerated Lean check for inference I002. Every number is scaled by x10 (money in crore, percent in percent).\n-/\n\nnamespace BusyBee.Inference.I002\n\n-- scale: x10\n\n-- SECTION: Scaled facts\n\n/-- DSCR was weak at 0.7 times in FY2026. -/\ndef dscr : Int := 7 -- F228 D3:p2:c0\n\n/-- Interest coverage was weak at 1.2 times in FY2026. -/\ndef interest_coverage : Int := 12 -- F227 D3:p2:c0\n\n-- SECTION: Claim\n\n/-- Quantified claim for inference I002 (all values scaled x10): Repayment capacity is critically weak, as evidenced by a company-reported DSCR of 0.7 times and an interest coverage ratio of 1.2 times, both of which are below the minimum threshold of 1.0 times required for adequate debt service. -/\ntheorem claim : dscr < 10 && interest_coverage < 20 := by\n  decide\n\nend BusyBee.Inference.I002\n",
+      "sha256": "d0eb8bde24d29286e53f891947b0dbce03705228cae95ec0ad0b472a42b9eb8a",
+      "theorems": [
+        "claim"
+      ],
+      "compile": {
+        "ok": true,
+        "stdout": "",
+        "stderr": "",
+        "duration_s": 2.4636286949998976,
+        "toolchain": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "errors": []
+      }
+    }
+  },
+  {
+    "inference_id": "I003",
+    "opinion": "The company is heavily reliant on external debt to fund its operations and capex, with 100% of its borrowings bearing variable interest rates, exposing it to significant interest rate risk.",
+    "fact_ids": [
+      "F077",
+      "F196"
+    ],
+    "reasoning": "100% of the company's total borrowings bear a variable rate of interest as of March 31, 2026, which means any increase in market interest rates will directly increase its finance costs. The company has historically funded 75-78% of its capex requirements with debt, indicating a structural reliance on borrowing that exacerbates this interest rate risk. This high leverage and variable rate exposure make the company vulnerable to macroeconomic shifts in interest rates. [Independent check: The reasoning claims that an increase in market interest rates will 'directly increase its finance costs,' which is a causal inference not explicitly stated in the facts (though implied by variable rates, the specific mechanism of 'directly increasing finance costs' is an interpretation).; The reasoning characterizes the debt funding of capex as a 'structural reliance on borrowing,' which is an interpretive judgment not supported by the fact that simply states the historical mix was 75-78% debt.; The reasoning concludes the company is 'vulnerable to macroeconomic shifts in interest rates,' which is a qualitative assessment/risk judgment not present in the listed facts.]",
+    "confidence": 0.2,
+    "quantitative": false,
+    "lean": null
+  },
+  {
+    "inference_id": "I004",
+    "opinion": "The company's liquidity position is strained, with a consolidated current ratio of 1.13x and high working capital utilization, leaving little room for error in managing short-term obligations.",
+    "fact_ids": [
+      "F146",
+      "F246"
+    ],
+    "reasoning": "The consolidated current ratio has declined to 1.13x as of March 31, 2026, from 1.24x in the previous year, indicating a weakening ability to cover short-term liabilities with current assets. The average working capital utilization was 90.7% during the 12-month period ending in July 2026, which is very high and suggests that the company is operating near the limit of its available credit facilities. This combination of low current ratio and high utilization indicates a tight liquidity position. [Lean check could not be completed and is shown unchecked: claim mixes incompatible units: current_ratio (x); wc_utilization (%); money (any lakh/crore/million) can only be compared with money, unless the claim multiplies or divides two money variables to compare against a ratio; select a number with a matching unit using a fact reference such as F012#3.5] [Independent check: The reasoning claims that the combination of a low current ratio and high utilization indicates a 'tight liquidity position,' which is a causal or interpretive conclusion not explicitly supported by the listed facts. The facts provide the numbers (1.13x, 1.24x, 90.7%) but do not define what constitutes 'tight' or 'weakening' in the context of the company's specific risk profile or industry standards.; The reasoning states that 90.7% utilization is 'very high,' which is a subjective assessment not present in the facts. The fact only states the percentage is 90.7%.]",
+    "confidence": 0.2,
+    "quantitative": true,
+    "lean": null
+  },
+  {
+    "inference_id": "I005",
+    "opinion": "The company's profitability is severely impacted by its new OTC business venture, Warren Remedies, which has reported significant losses and is dragging down consolidated results.",
+    "fact_ids": [
+      "F213",
+      "F244"
+    ],
+    "reasoning": "Investments in the over-the-counter oral care business under Warren Remedies Private Limited have constrained the company's consolidated profitability in FY2026. Warren Remedies reported a higher loss before tax of Rs. 64.3 crore in FY2026 compared to Rs. 36.0 crore in FY2025, indicating that the new business is not yet profitable and is a significant drag on the group's earnings. This suggests that the company's core business may be performing better than the consolidated figures indicate, but the new venture is a major risk factor. [Independent check: The reasoning claims the new business is 'not yet profitable', which is an assumption not explicitly stated in the facts (F213 only states it constrained profitability).; The reasoning asserts the core business is 'performing better than the consolidated figures indicate', a causal inference not supported by the provided facts.; The reasoning labels the new venture a 'major risk factor', which is an interpretive judgment not contained in the listed facts.]",
+    "confidence": 0.2,
+    "quantitative": false,
+    "lean": null
+  },
+  {
+    "inference_id": "I006",
+    "opinion": "The company faces significant regulatory overhangs, particularly at its Goa Plant II, which has received multiple USFDA observations and is currently under OAI status, impacting its ability to launch new products and generate revenue.",
+    "fact_ids": [
+      "F230",
+      "F193"
+    ],
+    "reasoning": "A USFDA inspection conducted in August-September 2026 resulted in seven Form 483 observations at Goa Plant II, indicating ongoing compliance issues. Any new Abbreviated New Drug Application (ANDA) filings from the Goa Plants II and III facility will be approved only when the OAI status is resolved, which means the company is unable to launch new products from these facilities until the regulatory issues are resolved. This regulatory overhang is a significant risk to the company's future revenue growth and profitability. [Independent check: The reasoning claims the regulatory overhang is a 'significant risk to the company's future revenue growth and profitability,' which is an assumption about financial impact not supported by the listed facts.; The reasoning states the company is 'unable to launch new products,' but the facts only specify that 'new ANDA filings' will not be approved; this conflates regulatory approval with product launch capability and adds an unsupported causal link to revenue/profitability.]",
+    "confidence": 0.2,
+    "quantitative": false,
+    "lean": null
+  },
+  {
+    "inference_id": "I007",
+    "opinion": "The company's revenue growth is positive but insufficient to offset the impact of rising costs and losses from new ventures, leading to a widening net loss despite top-line growth.",
+    "fact_ids": [
+      "F214",
+      "F243"
+    ],
+    "reasoning": "Consolidated revenue grew by 10.8% to Rs. 1,845.3 crore in FY2026, indicating that the company is able to grow its top line. However, the company's net loss widened to Rs. 98.7 crore in FY2026 from Rs. 78.0 crore in FY2025, showing that the revenue growth is not translating into profitability. This suggests that the company is facing significant cost pressures, including higher finance costs and losses from new ventures, which are eroding its margins and leading to a widening net loss. [Independent check: The reasoning claims the company is facing 'significant cost pressures, including higher finance costs and losses from new ventures', but the listed facts do not mention finance costs, new ventures, or specific cost drivers.; The reasoning asserts that these factors are 'eroding its margins', but the listed facts do not provide margin data or explicitly link the widening loss to margin erosion.]",
+    "confidence": 0.2,
+    "quantitative": false,
+    "lean": null
+  },
+  {
+    "inference_id": "I008",
+    "opinion": "The company's credit rating has been reaffirmed at [ICRA]A (Negative) with a negative outlook, reflecting the agency's concern about the company's elevated debt levels, weak debt-protection metrics, and regulatory overhangs.",
+    "fact_ids": [
+      "F167",
+      "F211"
+    ],
+    "reasoning": "ICRA reaffirmed the long-term fund-based term loan rating at [ICRA]A (Negative) on September 24, 2025, indicating that the company's creditworthiness is still considered acceptable but with a negative outlook. The negative outlook reflects the agency's concern about the company's elevated debt levels, weak debt-protection metrics, and moderately high working capital intensity. This rating action suggests that the company's credit profile is under pressure and may be downgraded if its financial performance does not improve. [Independent check: The reasoning claims the rating indicates creditworthiness is 'still considered acceptable', which is an interpretation not explicitly stated in the facts.; The reasoning asserts the company 'may be downgraded if its financial performance does not improve', a causal prediction not supported by the listed facts.]",
+    "confidence": 0.2,
+    "quantitative": false,
+    "lean": null
+  }
+]

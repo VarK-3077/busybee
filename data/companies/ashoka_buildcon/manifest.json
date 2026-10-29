@@ -1,0 +1,38 @@
+{
+  "company": "Ashoka Buildcon Limited",
+  "annual_report_fy2025_26.pdf": {
+    "title": "Ashoka Buildcon Annual Report 2025-26",
+    "kind": "annual_report",
+    "url": "https://www.ashokabuildcon.com/files/investors/financial-info/ABL_AR_FY_25-26.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 368
+  },
+  "crisil_rationale_2026-06-12.html": {
+    "title": "CRISIL rating rationale, 12 Jun 2026 (AA-/Negative reaffirmed and withdrawn)",
+    "kind": "rating_rationale",
+    "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AshokaBuildconLimited_June%2012_%202026_RR_397950.html",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "care_rationale_2026-01.pdf": {
+    "title": "CARE Ratings press release, Jan 2026 (AA- on Rating Watch with Positive Implications)",
+    "kind": "rating_rationale",
+    "url": "https://www.careratings.com/upload/CompanyFiles/PR/202601150144_Ashoka_Buildcon_Limited.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 7
+  },
+  "news_q1fy27_pl.md": {
+    "title": "Ashoka Buildcon Q1 FY27: Profit up 3%, debt ₹2,773cr",
+    "kind": "news",
+    "url": "https://www.multibagg.ai/market-pulse/articles/ashoka-buildcon-q1fy27-profit-debt-cmspivlfehhjg0znz9q0igpes",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_q1fy27_results.md": {
+    "title": "Ashoka Buildcon: Q1 FY27 Revenue ₹1,320 Cr, EBITDA ₹126 Cr; Wins ₹758 Cr New Orders",
+    "kind": "news",
+    "url": "https://www.investywise.com/ashoka-buildcon-earnings-call-transcript-for-q1-fy27/",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  }
+}

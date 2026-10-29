@@ -1,0 +1,38 @@
+{
+  "company": "Craftsman Automation Limited",
+  "annual_report_fy2025_26.pdf": {
+    "title": "Craftsman Automation Annual Report 2025-26 (40th)",
+    "kind": "annual_report",
+    "url": "https://www.craftsmanautomation.com/investors/wp-content/uploads/2026/06/Annual-Report-2026.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 232
+  },
+  "drhp_2020-12.pdf": {
+    "title": "Craftsman Automation Draft Red Herring Prospectus, Dec 2020",
+    "kind": "drhp",
+    "url": "https://listing.bseindia.com/download/349406/CraftsmanAutomationLimited_DraftRedHerringProspectus_20201215152058.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 454
+  },
+  "crisil_rationale_2025-12-12.html": {
+    "title": "CRISIL rating rationale, 12 Dec 2025 (AA-/Stable reaffirmed)",
+    "kind": "rating_rationale",
+    "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/CraftsmanAutomationLimited_December%2012_%202025_RR_385207.html",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_q1fy27_profit.md": {
+    "title": "Craftsman Automation Reports Q1 Consolidated Net Profit of ₹150 Crore vs ₹69.60 Crore YoY",
+    "kind": "news",
+    "url": "https://www.sahi.com/news/craftsman-automation-reports-q1-consolidated-net-profit-of-150-crore-vs-69-60-crore-yoy-3674-PE1_COR",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_q1fy27_share_price.md": {
+    "title": "Craftsman Automation Share Price Gains Over 4% After Q1 FY27 Earnings Results: Total Income Up 37.2% YoY",
+    "kind": "news",
+    "url": "https://www.angelone.in/news/stocks/craftsman-automation-share-price-gains-over-4-after-q1-fy27-earnings-results-total-income-up-37-2-yoy",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  }
+}

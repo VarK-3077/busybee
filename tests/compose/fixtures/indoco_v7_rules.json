@@ -1,0 +1,123 @@
+{
+ "rules": [
+  {
+   "rule_id": "net_debt_to_ebitda_max",
+   "name": "Net debt / EBITDA at most 4.5x",
+   "status": "fail",
+   "outcome": "refer",
+   "message": "Net debt / EBITDA exceeds the 4.5x minimum standard (or EBITDA is not positive); caution zone is above 3.5x.",
+   "expression": "ebitda > 0 and 2 * net_debt <= 9 * ebitda",
+   "inputs": [
+    {
+     "slot": "ebitda",
+     "fact_id": "F141",
+     "value": "14181.82",
+     "unit": "INR lakh",
+     "value_scaled": 14182,
+     "derived_from": [],
+     "note": "",
+     "caution": ""
+    },
+    {
+     "slot": "net_debt",
+     "fact_id": "F145",
+     "value": "1035.84",
+     "unit": "INR crore x 100",
+     "value_scaled": 103584,
+     "derived_from": [
+      "F145"
+     ],
+     "note": "missing component(s): lease liabilities, cash and bank balances, liquid investments; value computed without them",
+     "caution": "missing component(s): lease liabilities, cash and bank balances, liquid investments; value computed without them"
+    }
+   ],
+   "score_ids": [],
+   "unbound": {},
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "basis": "consolidated",
+   "caution_reason": "missing component(s): lease liabilities, cash and bank balances, liquid investments; value computed without them",
+   "measure": "Net debt / EBITDA",
+   "computed_value": "7.30x",
+   "threshold": "at most 4.5x"
+  },
+  {
+   "rule_id": "interest_coverage_min",
+   "name": "Interest coverage at least 2.5x",
+   "status": "fail",
+   "outcome": "refer",
+   "message": "Interest coverage (EBITDA / interest) is below the 2.5x minimum standard (or EBITDA is not positive); caution zone is below 4.0x.",
+   "expression": "ebitda > 0 and 2 * ebitda >= 5 * interest_expense",
+   "inputs": [
+    {
+     "slot": "ebitda",
+     "fact_id": "F141",
+     "value": "14181.82",
+     "unit": "INR lakh",
+     "value_scaled": 14182,
+     "derived_from": [],
+     "note": "",
+     "caution": ""
+    },
+    {
+     "slot": "interest_expense",
+     "fact_id": "F006",
+     "value": "122.25",
+     "unit": "INR crore",
+     "value_scaled": 12225,
+     "derived_from": [],
+     "note": "",
+     "caution": ""
+    }
+   ],
+   "score_ids": [],
+   "unbound": {},
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "basis": "consolidated",
+   "caution_reason": "",
+   "measure": "Interest coverage (EBITDA / interest)",
+   "computed_value": "1.16x",
+   "threshold": "at least 2.5x"
+  },
+  {
+   "rule_id": "current_ratio_min",
+   "name": "Current ratio at least 1.10x",
+   "status": "caution",
+   "outcome": "refer",
+   "message": "Current ratio is below the 1.10x minimum standard; caution zone is below 1.33x.",
+   "expression": "100 * current_assets >= 110 * current_liabilities",
+   "inputs": [
+    {
+     "slot": "current_assets",
+     "fact_id": "F122",
+     "value": "119335.33",
+     "unit": "INR lakh",
+     "value_scaled": 119335,
+     "derived_from": [],
+     "note": "",
+     "caution": ""
+    },
+    {
+     "slot": "current_liabilities",
+     "fact_id": "F123",
+     "value": "105254.26",
+     "unit": "INR lakh",
+     "value_scaled": 105254,
+     "derived_from": [],
+     "note": "",
+     "caution": ""
+    }
+   ],
+   "score_ids": [],
+   "unbound": {},
+   "policy_section": "4",
+   "policy_section_id": "P5",
+   "basis": "consolidated",
+   "caution_reason": "",
+   "measure": "Current ratio",
+   "computed_value": "1.13x",
+   "threshold": "at least 1.10x"
+  }
+ ]
+}

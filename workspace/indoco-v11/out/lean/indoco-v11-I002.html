@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference I002</title>
+  <link rel="stylesheet" href="../assets/tokens.css">
+  <link rel="stylesheet" href="../assets/document.css">
+  <link rel="stylesheet" href="../assets/components.css">
+  <script src="../assets/components.js" defer></script>
+</head>
+<body class="bb-desk">
+<main class="bb-page">
+  <header class="bb-doc-header">
+    <p class="bb-doc-kicker"><span>Lean artifact · indoco-v11:I002</span><span>Inference</span></p>
+    <h1 class="bb-doc-title">Inference I002</h1>
+    <p class="bb-doc-subtitle"><a href="indoco-v11-I002.lean">lean/indoco-v11-I002.lean</a></p>
+    <dl class="bb-meta">
+      <div><dt>SHA-256</dt><dd class="bb-mono">d0eb8bde24d2…</dd></div>
+      <div><dt>Theorems</dt><dd>1</dd></div>
+      <div><dt>Status</dt><dd>Proved</dd></div>
+    </dl>
+    <p class="bb-source-actions"><a class="bb-jump" href="../index.html">Back to the report ↖</a></p>
+  </header>
+
+  <section class="bb-lean" id="lean-indoco-v11-I002" aria-label="Lean artifact indoco-v11:I002">
+    <div class="bb-lean-head">
+      <span class="bb-lean-title">Inference I002</span>
+      <span class="bb-lean-file">lean/indoco-v11-I002.lean</span>
+      <span class="bb-lean-hash">sha256 d0eb8bde24d2…</span>
+      <span class="bb-badge" data-status="proved">Proved</span>
+    </div>
+    <pre class="bb-code bb-code--lines"><code><span class="bb-line">import BusyBee.Common</span><span class="bb-line"></span><span class="bb-line">/-!</span><span class="bb-line">Generated Lean check for inference I002. Every number is scaled by x10 (money in crore, percent in percent).</span><span class="bb-line">-/</span><span class="bb-line"></span><span class="bb-line">namespace BusyBee.Inference.I002</span><span class="bb-line"></span><span class="bb-line">-- scale: x10</span><span class="bb-line"></span><span class="bb-line">-- SECTION: Scaled facts</span><span class="bb-line"></span><span class="bb-line">/-- DSCR was weak at 0.7 times in FY2026. -/</span><span class="bb-line">def dscr : Int := 7 -- F228 D3:p2:c0</span><span class="bb-line"></span><span class="bb-line">/-- Interest coverage was weak at 1.2 times in FY2026. -/</span><span class="bb-line">def interest_coverage : Int := 12 -- F227 D3:p2:c0</span><span class="bb-line"></span><span class="bb-line">-- SECTION: Claim</span><span class="bb-line"></span><span class="bb-line">/-- Quantified claim for inference I002 (all values scaled x10): Repayment capacity is critically weak, as evidenced by a company-reported DSCR of 0.7 times and an interest coverage ratio of 1.2 times, both of which are below the minimum threshold of 1.0 times required for adequate debt service. -/</span><span class="bb-line">theorem claim : dscr &lt; 10 &amp;&amp; interest_coverage &lt; 20 := by</span><span class="bb-line">  decide</span><span class="bb-line"></span><span class="bb-line">end BusyBee.Inference.I002</span></code></pre>
+    <div class="bb-compile" data-ok="true">
+      <div class="bb-compile-head">Compiled without errors · 2.46 s · Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)</div>
+      <pre>(no messages)</pre>
+    </div>
+  </section>
+
+  <section class="bb-section" id="lean-explanation">
+    <h2 class="bb-h2">In plain English</h2>
+    <div class="bb-explain"><section class="bb-explain-section"><h3 class="bb-h3">Scaled facts</h3><div class="bb-explain-cols bb-caps"><span>Lean</span><span>In English</span></div><div class="bb-explain-item" id="explain-dscr"><div class="bb-explain-name">dscr <span class="bb-explain-kind">def</span></div><pre class="bb-explain-lean">def dscr : Int := 7 -- F228 D3:p2:c0</pre><div class="bb-explain-english"><p class="bb-explain-doc">DSCR was weak at 0.7 times in FY2026.</p><p class="bb-explain-mech">dscr is defined as 7 (scaled), from fact F228 (D3:p2:c0)</p></div></div><div class="bb-explain-item" id="explain-interest_coverage"><div class="bb-explain-name">interest_coverage <span class="bb-explain-kind">def</span></div><pre class="bb-explain-lean">def interest_coverage : Int := 12 -- F227 D3:p2:c0</pre><div class="bb-explain-english"><p class="bb-explain-doc">Interest coverage was weak at 1.2 times in FY2026.</p><p class="bb-explain-mech">interest coverage is defined as 12 (scaled), from fact F227 (D3:p2:c0)</p></div></div></section><section class="bb-explain-section"><h3 class="bb-h3">Claim</h3><div class="bb-explain-cols bb-caps"><span>Lean</span><span>In English</span></div><div class="bb-explain-item" id="explain-claim"><div class="bb-explain-name">claim <span class="bb-explain-kind">theorem</span></div><pre class="bb-explain-lean">theorem claim : dscr &lt; 10 &amp;&amp; interest_coverage &lt; 20 := by
+  decide</pre><div class="bb-explain-english"><p class="bb-explain-doc">Quantified claim for inference I002 (all values scaled x10): Repayment capacity is critically weak, as evidenced by a company-reported DSCR of 0.7 times and an interest coverage ratio of 1.2 times, both of which are below the minimum threshold of 1.0 times required for adequate debt service.</p><p class="bb-explain-mech">claim: dscr is less than 10 &amp;&amp; interest coverage is less than 20</p></div></div></section></div>
+  </section>
+</main>
+</body>
+</html>

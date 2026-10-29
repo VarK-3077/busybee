@@ -1,0 +1,38 @@
+{
+  "company": "Indoco Remedies Limited",
+  "annual_report_fy2025_26.pdf": {
+    "title": "Indoco Remedies Annual Report 2025-26 (79th)",
+    "kind": "annual_report",
+    "url": "https://www.indoco.com/annual-reports/79annualreport2025-2026.pdf",
+    "fetched_at": "2026-10-25",
+    "pages": 349
+  },
+  "icra_rationale_2026-09-30.pdf": {
+    "title": "ICRA rating rationale, 30 Sep 2026 (ratings reaffirmed)",
+    "kind": "rating_rationale",
+    "url": "https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/146083",
+    "fetched_at": "2026-10-25",
+    "pages": 9
+  },
+  "icra_rationale_2025-09-24.pdf": {
+    "title": "ICRA rating rationale, 24 Sep 2025 (reaffirmed, enhanced amount)",
+    "kind": "rating_rationale",
+    "url": "https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/137958",
+    "fetched_at": "2026-10-25",
+    "pages": 9
+  },
+  "news_q1fy27_earnings_call.md": {
+    "title": "Indoco Remedies (NSE:INDOCO): What Did Management Reveal in Q1 FY27 Earnings Call?",
+    "kind": "news",
+    "url": "https://www.kalkine.co.in/article/announcements/indoco-remedies-nseindoco-what-did-management-reveal-in-q1-fy27-earnings-call",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  },
+  "news_usfda_form483_goa.md": {
+    "title": "Indoco Remedies' Goa Sterile Plant Gets 7 USFDA Form 483 Observations",
+    "kind": "news",
+    "url": "https://medicaldialogues.in/amp/news/industry/pharma/indoco-remedies-goa-sterile-plant-gets-7-usfda-form-483-observations-178830",
+    "fetched_at": "2026-10-25",
+    "pages": 1
+  }
+}

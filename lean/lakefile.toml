@@ -1,0 +1,7 @@
+name = "BusyBee"
+version = "0.1.0"
+defaultTargets = ["BusyBee"]
+
+[[lean_lib]]
+name = "BusyBee"
+globs = ["BusyBee", "BusyBee.*", "BusyBee.**"]

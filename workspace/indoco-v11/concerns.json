@@ -1,0 +1,97 @@
+[
+  {
+    "concern_id": "C008",
+    "opinion": "What is the status of the income tax demands of INR 260.22 lakh and INR 89.24 lakh, and what is the potential additional liability including interest and penalties?",
+    "fact_ids": [
+      "F260"
+    ],
+    "reasoning": "These are pending tax appeals that represent contingent liabilities. The draft does not provide an estimate of the total potential outflow, which is important for assessing the company's true financial position.",
+    "query_used": "income tax demand appeal status potential liability interest penalties",
+    "found": true,
+    "severity": "low",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C012",
+    "opinion": "What is the impact of the 11-13% of domestic formulations subject to NLEM pricing controls on the company's margins and revenue growth?",
+    "fact_ids": [
+      "F261"
+    ],
+    "reasoning": "Pricing controls can limit the company's ability to pass on cost increases to customers, squeezing margins. The draft mentions the percentage but does not quantify the impact on profitability.",
+    "query_used": "NLEM pricing controls impact margins revenue growth",
+    "found": true,
+    "severity": "low",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C003",
+    "opinion": "What is the current status of the USFDA OAI (Official Action Indicated) status for Goa Plants II and III, and when is the next inspection scheduled?",
+    "fact_ids": [
+      "F190",
+      "F191",
+      "F184",
+      "F216"
+    ],
+    "reasoning": "The OAI status blocks new ANDA approvals, capping revenue growth. The draft mentions partial resumption but does not clarify if the OAI status has been formally lifted or if the recent 483s have re-escalated the risk. (retrieved passages do not answer the question)",
+    "query_used": "Goa Plant II III OAI status USFDA inspection schedule",
+    "found": false,
+    "severity": "high",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C001",
+    "opinion": "What is the detailed remediation plan and timeline for resolving the seven new USFDA Form 483 observations at Goa Plant II, and what is the estimated financial impact on revenue and capex?",
+    "fact_ids": [
+      "F230",
+      "F193",
+      "F202"
+    ],
+    "reasoning": "The new observations in Aug-Sep 2026 (post-balance sheet) suggest the regulatory overhang is worsening, not resolving. This directly threatens the revenue recovery narrative and could trigger a rating downgrade, fundamentally changing the credit outlook. (retrieved passages do not answer the question)",
+    "query_used": "Goa Plant II USFDA Form 483 remediation plan timeline cost",
+    "found": false,
+    "severity": "high",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C002",
+    "opinion": "What is the specific repayment schedule and source of funds for the INR 145.8 crore debt servicing obligation in FY2027, given the current DSCR of 0.7x?",
+    "fact_ids": [
+      "F247",
+      "F228",
+      "F108"
+    ],
+    "reasoning": "With a DSCR below 1.0x, the company cannot service its debt from operating cash flows. Understanding the funding source (equity injection, asset sale, or new debt) is critical to assessing default risk in the next 12 months. (retrieved passages do not answer the question)",
+    "query_used": "FY2027 debt repayment plan source of funds DSCR coverage",
+    "found": false,
+    "severity": "high",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C004",
+    "opinion": "What is the detailed financial model for Warren Remedies Private Limited, including the break-even timeline and expected cash burn for the next 24 months?",
+    "fact_ids": [
+      "F244",
+      "F213",
+      "F218"
+    ],
+    "reasoning": "Warren Remedies is a major drag on consolidated profitability (loss of Rs 64.3 crore in FY2026). Without a clear path to profitability, this venture continues to erode equity and increase leverage, posing a significant risk to the group's solvency. (retrieved passages do not answer the question)",
+    "query_used": "Warren Remedies financial model break-even timeline cash burn",
+    "found": false,
+    "severity": "high",
+    "dropped_reason": ""
+  },
+  {
+    "concern_id": "C006",
+    "opinion": "What is the rationale for the dividend recommendation of INR 0.20 per share given the widening net loss and high leverage?",
+    "fact_ids": [
+      "F001",
+      "F013",
+      "F228"
+    ],
+    "reasoning": "Paying a dividend while incurring losses and having a DSCR of 0.7x is unusual and may signal a lack of capital discipline or a need to appease shareholders, which is a negative governance signal for creditors. (retrieved passages do not answer the question)",
+    "query_used": "dividend policy rationale loss making high leverage",
+    "found": false,
+    "severity": "medium",
+    "dropped_reason": ""
+  }
+]

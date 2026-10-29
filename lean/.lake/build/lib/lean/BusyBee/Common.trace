@@ -1,0 +1,30 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["96140f5bb6e0a120.olean"],
+  "m": false,
+  "i": "365a7db5d4f266d5.ilean",
+  "c": "aa27e7c064756304.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/lib/lean /home/varshith/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/BusyBee/Common.lean -o /tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/lib/lean/BusyBee/Common.olean -i /tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/lib/lean/BusyBee/Common.ilean -c /tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/ir/BusyBee/Common.c --setup /tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/.lake/build/ir/BusyBee/Common.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["deps",
+   [["BusyBee/BusyBee:extraDep", [["@BusyBee:extraDep", "00000000000006bb"]]],
+    ["imports", "00000000000006bb"]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+   "407ce514b71d5a10"],
+  ["/tmp/claude-1000/-home-varshith-Files-aegis26/837c0d33-5f13-46a6-8217-aa6d0faa568d/scratchpad/busybee-public/busybee/lean/BusyBee/Common.lean",
+   "46d61199fb070c1f"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: BusyBee.Common", "eb2f4cdecc9ddd94"],
+  ["Package.id?: (some BusyBee)", "dfafcff50d0dbf44"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "4399ffe3e0181cc4"}
